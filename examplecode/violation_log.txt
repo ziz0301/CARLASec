@@ -1,0 +1,36 @@
+Red light run violation 
+Agent ran a red light 13 at (x=114.452, y=21.196, z=0.254)
+{'id': 13, 'location': <carla.libcarla.Location object at 0x00000293FDBB6900>, 'time': '2023-12-20T17:07:31.441299'}
+Red light run violation 
+Agent ran a red light 11 at (x=-46.172, y=-73.557, z=0.254)
+{'id': 11, 'location': <carla.libcarla.Location object at 0x000002213FCC8820>, 'time': '2023-12-20T17:09:07.540069'}
+Red light run violation 
+Agent ran a red light 15 at (x=-31.931, y=20.302, z=0.254)
+{'id': 15, 'location': <carla.libcarla.Location object at 0x000002213FCC83C0>, 'time': '2023-12-20T17:09:56.143488'}
+Red light run violation 
+Agent ran a red light 10 at (x=115.45, y=35.045, z=0.223)
+{'id': 10, 'location': <carla.libcarla.Location object at 0x000002213FCC8580>, 'time': '2023-12-20T17:10:16.220567'}
+Red light run violation 
+Agent ran a red light 10 at (x=115.45, y=35.045, z=0.223)
+{'id': 10, 'location': <carla.libcarla.Location object at 0x0000029E875E8900>, 'time': '2023-12-20T17:11:57.298929'}
+Red light run violation 
+Agent ran a red light 16 at (x=-64.264, y=7.063, z=0.254)
+{'id': 16, 'location': <carla.libcarla.Location object at 0x0000029E875E8200>, 'time': '2023-12-20T17:12:29.574123'}
+Stop sign violation 
+Agent ran a stop sign with id=3 at (x=26.1, y=75.15, z=0.15)
+{'id': 3, 'location': <carla.libcarla.Location object at 0x0000029E875E8120>}
+Red light run violation 
+Agent ran a red light 12 at (x=-34.449, y=-51.02, z=0.254)
+{'id': 12, 'location': <carla.libcarla.Location object at 0x000002A72B1434A0>, 'time': '2024-01-02T14:21:12.316872'}
+Red light run violation 
+Agent ran a red light 14 at (x=89.792, y=20.922, z=0.254)
+{'id': 14, 'location': <carla.libcarla.Location object at 0x000002A72B1434A0>, 'time': '2024-01-02T14:21:44.170273'}
+Stop sign violation 
+Agent ran a stop sign with id=3 at (x=26.1, y=75.15, z=0.15)
+{'id': 3, 'location': <carla.libcarla.Location object at 0x000002A72B1434A0>}
+Red light run violation 
+Agent ran a red light 18 at (x=-94.928, y=20.335, z=0.254)
+{'id': 18, 'location': <carla.libcarla.Location object at 0x000001E8F092B2E0>, 'time': '2024-01-03T22:16:31.501849'}
+Red light run violation 
+Agent ran a red light 19 at (x=-59.242, y=-51.498, z=0.254)
+{'id': 19, 'location': <carla.libcarla.Location object at 0x000001E8F092BC80>, 'time': '2024-01-03T22:16:40.469273'}

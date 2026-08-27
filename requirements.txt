@@ -1,0 +1,12 @@
+future
+numpy; python_version < '3.0'
+numpy==1.18.4; python_version >= '3.0'
+pygame
+matplotlib
+open3d
+Pillow
+carla
+python-can==4.4.2
+cantools==39.4.5
+can-isotp==1.9
+udsoncan==1.20.1

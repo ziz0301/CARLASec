@@ -1,0 +1,1 @@
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000#0000; done; sleep 8; done

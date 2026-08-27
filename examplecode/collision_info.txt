@@ -1,0 +1,13 @@
+Version: 1
+Map: Town10HD_Opt
+Date: 01/07/24 13:12:39
+
+    Time  Types     Id Actor 1                                 Id Actor 2                            
+       0   v o      67 vehicle.mercedes.coupe_2020         4294967295                                    
+      17   v o      83 vehicle.mercedes.coupe_2020         4294967295                                    
+      18   v o      83 vehicle.mercedes.coupe_2020         4294967295                                    
+      18   v o      83 vehicle.mercedes.coupe_2020         4294967295                                    
+      19   v o      83 vehicle.mercedes.coupe_2020         4294967295                                    
+
+Frames: 433
+Duration: 66 seconds

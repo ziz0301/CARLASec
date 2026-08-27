@@ -1,0 +1,4 @@
+ Agent ran a red light 19 at (x=-59.242, y=-51.498, z=0.254)
+{'id': 19, 'location': <carla.libcarla.Location object at 0x000001ED6E9C7270>, 'time': '2023-12-20T15:03:41.919318'}
+Agent ran a red light 17 at (x=-62.352, y=20.197, z=0.254)
+{'id': 17, 'location': <carla.libcarla.Location object at 0x000001E7D76582E0>, 'time': '2023-12-20T15:06:38.779852'}

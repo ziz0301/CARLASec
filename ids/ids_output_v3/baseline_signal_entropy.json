@@ -1,0 +1,6 @@
+{
+    "signal_entropy_mu": 2.4979570332396057,
+    "signal_entropy_sigma": 0.40812336304994895,
+    "window_size": 50,
+    "num_samples": 774
+}

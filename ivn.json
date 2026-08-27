@@ -1,0 +1,146 @@
+{
+  "ivn": [
+    {
+      "ecu": [
+        {
+          "name": "HeadUnit",
+          "ecutype": "tester",
+          "bus": {
+            "name": "KCAN4",
+            "protocol": "CAN"
+          },
+          "components": [
+            {
+              "name": "huintel",
+              "os": "QNX",
+              "connection": ["gateway", "hujacinto"],
+              "services": [
+                {
+                  "name": "diag_service",
+                  "privilege": "root",
+                  "connection": ["gateway"],
+                  "vuls": []
+                },
+                {
+                  "name": "api_control",
+                  "privilege": "root",
+                  "connection": ["gateway"],
+                  "vuls": []
+                },
+                {
+                  "name": "virtual_shell",
+                  "privilege": "root",
+                  "connection": ["gateway"],
+                  "vuls": []
+                },
+                {
+                  "name": "webkit",
+                  "privilege": "browser",
+                  "connection": ["diag_service"],
+                  "vuls": [
+                    {
+                      "name": "CVE-2012-3748",
+                      "accessvector": "N",
+                      "probability": 1.8,
+                      "impact": 5.3
+                    },
+                    {
+                      "name": "no_encryption_on_transportation",
+                      "accessvector": "N",
+                      "probability": 4.7,
+                      "impact": 3.1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hujacinto",
+              "os": "QNX",
+              "connection": ["huintel"],
+              "services": [
+                {
+                  "name": "login",
+                  "privilege": "root",
+                  "connection": ["gateway"],
+                  "vuls": [
+                    {
+                      "name": "CVE-2018-9322",
+                      "accessvector": "L",
+                      "probability": 1.8,
+                      "impact": 5.9
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gateway",
+          "ecutype": "gateway",
+          "bus": {
+            "name": "KCAN4",
+            "protocol": "CAN"
+          },
+          "components": [
+            {
+              "name": "gw",
+              "os": "Linux",
+              "connection": ["huintel", "throttle_ctr"],
+              "services": [
+                {
+                  "name": "transfer_can_message",
+                  "privilege": "root",
+                  "connection": ["throttle"],
+                  "vuls": []
+                },
+                {
+                  "name": "transfer_uds_message",
+                  "privilege": "root",
+                  "connection": ["throttle"],
+                  "vuls": []
+                },
+                {
+                  "name": "whitelist",
+                  "privilege": "root",
+                  "connection": [],
+                  "vuls": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Throttle",
+          "ecutype": "controller",
+          "bus": {
+            "name": "KCAN4",
+            "protocol": "CAN"
+          },
+          "components": [
+            {
+              "name": "throttle_ctr",
+              "os": "RTOS",
+              "connection": [],
+              "services": [
+                {
+                  "name": "throttle_ctr_on_can_message",
+                  "privilege": "root",
+                  "connection": ["gateway"],
+                  "vuls": []
+                },
+                {
+                  "name": "handle_uds_message",
+                  "privilege": "root",
+                  "connection": ["gateway"],
+                  "vuls": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

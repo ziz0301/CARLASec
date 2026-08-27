@@ -1,0 +1,1000 @@
+  168  while true; do cansend vcan0 24B#5500000000000000; sleep 0.1; done
+  169  while true; do cansend kcan4 24B#5500000000000000; sleep 0.1; done
+  170  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend kcan4 24B#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.2; done; sleep 5; done
+  171  while true; do cansend kcan4 24B#5500000000000000; sleep 0.1; done
+  172  while true; do cansend kcan4 24B#5500000000000022; sleep 0.1; done
+  173  while true; do cansend kcan4 24B#5500000000000022; sleep 5; do cansend kcan4 24B#0000000000000022; done
+  174  while true; do cansend kcan4 24B#5500000000000022; sleep 5; cansend kcan4 24B#0000000000000022; done
+  175  while true; do cansend kcan4 34F#5500000000000022;
+  176  while true; do cansend kcan4 34F#5500000000000022; done
+  177  while true; do cansend kcan4 000#5500000000000022; done
+  178  hile true; do cansend kcan4 000#000; done
+  179  while true; do cansend kcan4 000#000; done
+  180  while true; do cansend kcan4 000#0000; done
+  181  conda activate carlasec
+  182  candump kcan4
+  183  conda activate carlasec
+  184  while true; do cansend kcan4 000#0000; done
+  185  conda activate carlasec
+  186  python generate_traffic.py 
+  187  python test_location.py 
+  188  python generate_traffic.py 
+  189  python test_location.py 
+  190  python generate_traffic.py 
+  191  python test_location.py 
+  192  python generate_traffic.py 
+  193  python no_render1.py 
+  194  python generate_traffic.py 
+  195  python test_location.py 
+  196  python generate_traffic.py 
+  197  python test_location.py 
+  198  python generate_traffic.py 
+  199  python test_location.py 
+  200  conda activate carlasec
+  201  cd Desktop/WSL/PythonAPI/AUSSE/
+  202  sudo ./vcan.sh 
+  203  candump vcan0
+  204  candump kcan4
+  205  clear
+  206  candump kcan4
+  207  candump vcan0
+  208  candump kcan4
+  209  cd Desktop/WSL/PythonAPI/AUSSE/
+  210  for cycle in {1..5}; do cansend vcan0 7E0#05310101A964; sleep 5; cansend vcan0 7E0#05310201A964; sleep 5; done
+  211  while true; do cansend kcan4 000#0000; done
+  212  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 0000024B#5508010100000012; sleep 1; done; sleep 5; done
+  213  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend kcan4 0000024B#550801010000000F; sleep 1; done; cansend kcan4 0000024B#000801010000000F; sleep 5; done
+  214  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend kcan4 0000024B#550801010000000F; done; cansend kcan4 0000024B#000801010000000F; sleep 5; done
+  215  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 8 ]] && break; cansend kcan4 0000024B#550801010000000F; done; cansend kcan4 0000024B#000801010000000F; sleep 3; done
+  216  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 8 ]] && break; cansend kcan4 000#0000; done; sleep 3; done
+  217  while true; do cansend kcan4 000#0000; done
+  218  cd Desktop/WSL/PythonAPI/AUSSE/
+  219  python client_run.py --spawnpos 97,79
+  220  python test_location.py 
+  221  python client_run.py --spawnpos 97,79
+  222  python test_location.py 
+  223  python client_run.py --spawnpos 97,79
+  224  python test_location.py 
+  225  python no_render1.py 
+  226  python test_location.py 
+  227  python client_run.py --spawnpos 97,79
+  228  python client_run.py --spawnpos 97,79 --dos
+  229  python test_location.py 
+  230  python generate_traffic.py
+  231  python test_location.py 
+  232  python client_run.py --spawnpos 97,79 --dos
+  233  python client_run.py --spawnpos 97,52 --dos
+  234  python client_run.py --spawnpos 97,28 --dos
+  235  conda activate carlasec
+  236  cd Desktop/WSL/PythonAPI/AUSSE/
+  237  sudo ./vcan.sh 
+  238  ifconfig
+  239  while true; do cansend kcan4 000#0000; done
+  240  while true; do cansend kcan4 000#0000; done - Expectation: DOS attack
+  241  while true; do cansend kcan4 000#0000; done
+  242  while true; do cansend kcan4 0000024B#550801010000000F; done
+  243  conda activate carlasec
+  244  cd Desktop/WSL/PythonAPI/AUSSE/
+  245  candump kcan4 | python3 -u parse_candump_rate.py
+  246  conda activate carlasec
+  247  python client_run.py --spawnpos 97,28 --kcandos
+  248  python client_run.py --spawnpos 97,16 --kcandos
+  249  python client_run.py --spawnpos 97,98 --kcandos
+  250  python client_run.py --spawnpos 97,98 --kcandos --sniff
+  251  python client_run.py --spawnpos 97,98 --kcandos
+  252  ncat -lvp 4444
+  253  conda activate carlasec
+  254  cd Desktop/WSL/PythonAPI/AUSSE/
+  255  candump vcan0
+  256  candump kcan4
+  257  conda activate carlarsec
+  258  conda activate carlasec
+  259  clear
+  260  python generate_traffic.py 
+  261  cd .\Desktop\WSL\PythonAPI\AUSSE\
+  262  clear
+  263  ./settingup.sh 
+  264  sudo ./settingup.sh 
+  265  conda
+  266  chmod +x settingup.sh
+  267  sudo ./settingup.sh 
+  268  ./settingup.sh 
+  269  clear
+  270  cd Desktop/WSL/PythonAPI/AUSSE/
+  271  conda activate carlasec
+  272  python client_run.py --spawnpos 97,16 --kcandos
+  273  python test_location.py 
+  274  python client_run.py --spawnpos 97,16 --kcandos
+  275  python no_render1.py 
+  276  python client_run.py --spawnpos 97,16 --kcandos
+  277  python test_location.py 
+  278  python client_run.py --spawnpos 97,16 --kcandos
+  279  python test_location.py 
+  280  python client_run.py --spawnpos 97,16 --kcandos
+  281  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  282  python test_location.py 
+  283  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  284  python test_location.py 
+  285  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  286  python test_location.py 
+  287  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  288  python test_location.py 
+  289  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  290  python test_location.py 
+  291  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  292  python test_location.py 
+  293  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  294  python test_location.py 
+  295  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  296  python test_location.py 
+  297  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  298  python test_location.py 
+  299  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  300  python test_location.py 
+  301  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  302  python test_location.py 
+  303  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  304  python test_location.py 
+  305  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  306  python test_location.py 
+  307  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  308  python test_location.py 
+  309  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  310  python test_location.py 
+  311  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  312  python test_location.py 
+  313  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  314  cd Desktop/WSL/PythonAPI/AUSSE/
+  315  conda activate carlasec
+  316  sudo ./vcan.sh 
+  317  ifconfig
+  318  clear
+  319  while true; cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+  320  while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+  321  while true; do cansend kcan4 000#0000; done
+  322  while true; do cansend kcan4 0000024B#550801010000000F; done
+  323  while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+  324  clear
+  325  while true; do cansend kcan4 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+  326  cansend vcan0 7E0#05310101A964
+  327  cansend vcan0 7E0#05310101A920
+  328  while true; do cansend vcan0 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "0731%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256))); done
+  329  while true; do cansend vcan0 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "0731%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256))); done
+  330  while true; do cansend vcan0 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "073101%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256))); done
+  331  while true; do cansend vcan0 000#0000; done
+  332  while true; do cansend vcan0 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "073101%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256))); done
+  333  cansend vcan0 7E0#05310101A920
+  334  while true; do cansend vcan0 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "073101%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256))); done
+  335  while true; do cansend kcan4 000#0000; done
+  336  while true; do cansend kcan4 0000024B#550801010000000F; done
+  337  while true; do cansend kcan4 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);
+  338  while true; do cansend kcan4 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done;
+  339  while true; do cansend vcan0 $({ IDs=(24B 2F6 0CE 1A0 1B4 0C4 0BA 0BB 7E0); echo ${IDs[$((RANDOM % ${#IDs[@]}))]}; })#$(printf "073101%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256)) $((RANDOM%256))); done
+  340  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf 07310101A9"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))) done
+  341  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf 07310101A9"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); done
+  342  cansend vcan0 7E0#05310201A964
+  343  while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+  344  while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#05310204F15F; done
+  345  while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#550801010000000F; done
+  346  git status
+  347  git commit -A
+  348  git add -A
+  349  git commit -m "update"
+  350  git push
+  351  git checkout -b local_update
+  352  git push origin local_update
+  353  conda activate carlasec
+  354  cd Desktop/WSL/PythonAPI/AUSSE/
+  355  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  356  python test_location.py 
+  357  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  358  python test_location.py 
+  359  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  360  python test_location.py 
+  361  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  362  python test_location.py 
+  363  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  364  python test_location.py 
+  365  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  366  python test_location.py 
+  367  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  368  python test_location.py 
+  369  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  370  python test_location.py 
+  371  python client_run.py --spawnpos 97,16 --kcandos --vcandos
+  372  git -status
+  373  git status
+  374  git add -A
+  375  git push
+  376  git push -m "Add whitelist code and experiment"
+  377  cd ..
+  378  git commit -m "Add whitelist code and experiment"
+  379  git push
+  380  git push origin
+  381  git push origin HEAD
+  382  git status
+  383  history | grep git
+  384  git push origin main --force
+  385  git rebase --continue
+  386  git rebase --abort
+  387  error: invalid orig-head: '6e0b32ac5ec0cda4b519792a0276c61297640c0e'
+  388  rm -rf .git/rebase-merge .git/rebase-apply
+  389  git checkout main
+  390  git add -A
+  391  git commit -m "Add whitelist code and experiment"
+  392  git push origin main
+  393  git reflog --oneline | head -20
+  394  git checkout 00c5b09
+  395  conda activate carlasec
+  396  cd Desktop/WSL/PythonAPI/AUSSE/
+  397  clear
+  398  candump kcan4
+  399  candump vcan0
+  400  candump kcan4
+  401  candump vcan0
+  402  candump kcan4
+  403  candump vcan0
+  404  candump kcan4
+  405  cd Desktop/WSL
+  406  cd PythonAPI
+  407  git status
+  408  git push origin local_update
+  409  ping -c 2 github.com
+  410  sudo rm /etc/resolv.conf
+  411  sudo tee /etc/resolv.conf << EOF
+  412  nameserver 8.8.8.8
+  413  nameserver 1.1.1.1
+  414  EOF
+  415  sudo chattr +i /etc/resolv.conf
+  416  ping -c 2 github.com
+  417  git push origin local_update
+  418  echo "examples/output/*.mp4" >> .gitignore
+  419  git rm --cached examples/output/hybrid_run.mp4
+  420  ls examples/output/
+  421  git add .gitignore
+  422  git commit -m "Remove large video and update .gitignore"
+  423  git push origin local_update
+  424  conda activate carlasec
+  425  cd Desktop/WSL/PythonAPI/AUSSE/
+  426  candump vcan0
+  427  while true; do cansend vcan0 000000C4#5FFFFFFF0000003A; sleep 0.5; done;
+  428  conda activate carlasec
+  429  cd Desktop/WSL/PythonAPI/AU
+  430  cd Desktop/WSL/PythonAPI/AUSSE/
+  431  sudo ./vcan.sh 
+  432  ifconfig
+  433  clear
+  434  python client_run.py --spawnpos 97,16
+  435  python client_run.py --spawnpos 97,16 --sniff
+  436  python test_location.py 
+  437  python client_run.py --spawnpos 97,16 --sniff
+  438  python test_location.py 
+  439  python client_run.py --spawnpos 97,16 --sniff
+  440  python test_location.py \
+  441  python client_run.py --spawnpos 97,16 --sniff
+  442  python test_location.py \
+  443  python client_run.py --spawnpos 97,16 --sniff
+  444  python test_location.py 
+  445  python client_run.py --spawnpos 97,16 --sniff
+  446  python test_location.py 
+  447  python client_run.py --spawnpos 97,16 --sniff
+  448  python test_location.py 
+  449  python client_run.py --spawnpos 97,16 --sniff
+  450  python test_location.py 
+  451  python client_run.py --spawnpos 97,16 --sniff
+  452  python test_location.py 
+  453  python client_run.py --spawnpos 97,16 --sniff
+  454  python test_location.py 
+  455  python client_run.py --spawnpos 97,16 --sniff
+  456  python test_location.py 
+  457  python client_run.py --spawnpos 97,16 --sniff
+  458  python test_location.py 
+  459  python client_run.py --spawnpos 97,16 --sniff
+  460  python test_location.py 
+  461  python client_run.py --spawnpos 97,16 --sniff
+  462  python test_location.py 
+  463  python client_run.py --spawnpos 97,16 --sniff
+  464  python client_run.py --spawnpos 97,16 --attack
+  465  python client_run.py --spawnpos 97,16 --attacker
+  466  python client_run.py --spawnpos 97,16
+  467  python test_location.py 
+  468  python client_run.py --spawnpos 97,16 --attacker
+  469  conda activate carlasec
+  470  candump vcan0
+  471  echo '{"type":"spoof","id":1}' > /tmp/attack_flag.json
+  472  # send attack for 2 seconds
+  473  end=$((SECONDS+2))
+  474  while [ $SECONDS -lt $end ]; do   cansend vcan0 1A0#FFFFFFFF
+  475    sleep 0.05; done
+  476  rm /tmp/attack_flag.json
+  477  ifconfig
+  478  sudo ./vcan.sh 
+  479  conda activate carlasec
+  480  candump vcan0
+  481  echo $DISPLAY
+  482  nano ~/.bashrc
+  483  echo $DISPLAY
+  484  conda activate carlasec
+  485  echo $DISPLAY
+  486  cat ~/.bashrc
+  487  source ~/.bashrc
+  488  echo $DISPLAY
+  489  gnome-terminal
+  490  xeyes
+  491  conda activate carlasec
+  492  cd Desktop/WSL/PythonAPI/AUSSE/
+  493  python client_run.py --spawnpos 97,16 --attacker
+  494  conda activate carlasec
+  495  cd Desktop/WSL/PythonAPI/AUSSE/
+  496  python testdbus.py 
+  497  conda activate carlasec
+  498  xeyes
+  499  conda activate carlasec
+  500  cansend vcan0 000001A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+  501  for cycle in {1..5}; do cansend vcan0 7E0#05310104F15F; sleep 5; cansend vcan0 7E0#05310204F15F; sleep 5; done
+  502  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 7E0#$(printf 07310101A9"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); sleep 0.2; done; sleep 5; done; cansend vcan0 7E0#05310201A964
+  503  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 1A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.2; done; sleep 5; done\
+  504  for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 1A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.2; done; sleep 5; done
+  505  cd /Desktop/WSL/PythonAPI/AUSSE/ids
+  506  cd Desktop/WSL/PythonAPI/AUSSE/ids
+  507  python attack
+  508  python attacker.py 
+  509  conda activate carlasec
+  510  cd Desktop/WSL/PythonAPI/AUSSE/
+  511  candump vcan0
+  512  sudo ./vcan.sh 
+  513  candump vcan0
+  514  clear
+  515  candump vcan0
+  516  while true; do cansend vcan0 000000C4#000000FF00000001; done
+  517  conda activate carlasec
+  518  candump vcan0
+  519  while true; do cansend vcan0 000000C4#000000FF00000001; done
+  520  conda activate carlasec
+  521  cd Desktop/WSL/PythonAPI/AUSSE/
+  522  candump vcan0
+  523  candump vcan0\
+  524  candump vcan0
+  525  conda activate carlasec
+  526  cd Desktop/WSL/PythonAPI/AUSSE/
+  527  ./attack.sh
+  528  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'; sleep 0.1; done
+  529  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'; sleep 0.1; done;
+  530  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'; dome
+  531  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'; done
+  532  while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.1; done
+  533  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'; sleep 0.1; done
+  534  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); sleep 0.1; done
+  535  while true; do cansendconda activate carlasec
+  536  cd Desktop/WSL/PythonAPI/AUSSE/
+  537  python client_run.py --loop --sniff
+  538  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $high); b2=00; b3=01; printf "%s%s%s%s0000%02X" "$low" "$b1" "$b2" "$b3" $((RANDOM%256)))
+  539  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $high); b2=$(printf "%02X" $((RANDOM%256))); b3=01; printf "%s%s%s%s0000%02X" "$low" "$b1" "$b2" "$b3" $((RANDOM%256)))
+  540  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $((high | 0x20))); printf "%s%s00000000%02X" "$low" "$b1" $((RANDOM%256)))
+  541  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $((high | 0x10))); printf "%s%s0000000000%02X" "$low" "$b1" $((RANDOM%256)))
+  542  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $((high | 0x20))); printf "%s%s0000000000%02X" "$low" "$b1" $((RANDOM%256)))
+  543  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $high); b2=$(printf "%02X" $((RANDOM%256))); b3=01; printf "%s%s%s%s000000%02X" "$low" "$b1" "$b2" "$b3" $((RANDOM%256)))
+  544  cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $high); b2=00; b3=01; printf "%s%s%s%s000000%02X" "$low" "$b1" "$b2" "$b3" $((RANDOM%256)))
+  545  python client_run.py --loop --sniff --attacker
+  546  python client_run.py --loop --sniff
+  547  python test_
+  548  python test_location.py 
+  549  python client_run.py --loop --sniff
+  550  python test_location.py 
+  551  python client_run.py --loop --sniff
+  552  conda activate carlasec
+  553  cd Desktop/WSL/PythonAPI/AUSSE/
+  554  sudo ./vcan.sh 
+  555  cd ids
+  556  python ids_runtime.py 
+  557  python ids_tokenise_and_thresholds_v5.py 
+  558  python ids_runtime.py 
+  559  python ids_tokenise_and_thresholds_v5.py 
+  560  python ids_runtime.py 
+  561  python ids_tokenise_and_thresholds_v5.py 
+  562  python ids_runtime.py 
+  563  python decode_and_merge.py 
+  564  python eval_ids.py 
+  565  clear
+  566  python eval_ids.py 
+  567  python eval_ids1.py 
+  568  python eval_ids.py 
+  569  python ids_runtime.py 
+  570  conda activate carlasec
+  571  cd Desktop/WSL/PythonAPI/AUSSE/
+  572  candump vcan0
+  573  conda activate carlasec
+  574  cd Desktop/WSL/PythonAPI/AUSSE/
+  575  python client_run.py --loop --sniff
+  576  python test_location.py 
+  577  python no_render1.py 
+  578  python client_run.py --loop --sniff --attack
+  579  python client_run.py --loop --sniff --attacker
+  580  python no_render1.py 
+  581  python client_run.py --loop --sniff --attacker
+  582  conda activate carlasec
+  583  cd Desktop/WSL/PythonAPI/AUSSE/
+  584  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#5508010100000012; sleep 0.1; done
+  585  while true; do cansend vcan0 000000C4#5FFFFFFF0000003A; sleep 0.1; done
+  586  while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.1; done
+  587  while true; do cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.1; done
+  588  while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.1; done
+  589  while true; do cansend vcan0 000001A0#5508010000000012; sleep 0.1; done
+  590  while true; do cansend vcan0 000001A0#FFFF010000000012; sleep 0.1; done
+  591  while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.1; done
+  592  while true; do cansend vcan0 000000C4#5FFFFFFF0000003A;
+  593  while true; do cansend vcan0 000000C4#5FFFFFFF0000003A;done
+  594  conda activate carlasec
+  595  clear
+  596  python ids_runtime.py 
+  597  pythn filter_log.py 
+  598  python filter_log.py 
+  599  python filter_sniff_log_attack.py 
+  600  python eval_ids.py 
+  601  conda activate carlasec
+  602  cd Desktop/WSL/PythonAPI/AUSSE/
+  603  clear
+  604  python client_run.py --loop --sniff --attacker
+  605  conda activate carlasec
+  606  cd /Desktop/WSL/PythonAPI/AUSSE/
+  607  cd Desktop/WSL/PythonAPI/AUSSE/
+  608  clear
+  609  sudo ./vcan.sh 
+  610  candump vcan0
+  611  conda activate carlasec
+  612  cd Desktop/WSL/PythonAPI/AUSSE/
+  613  clear
+  614  conda activate carlasec
+  615  cd Desktop/WSL/PythonAPI/AUSSE/
+  616  cd ids
+  617  python ids_runtime.py 
+  618  sudo ./vcan.sh
+  619  clear
+  620  sudo ./vcan.sh
+  621  cd ..
+  622  sudo ./vcan.sh
+  623  ifconfig
+  624  clear
+  625  cd ids
+  626  python ids_runtime.py 
+  627  cd ids
+  628  ./ids_attacker1.sh
+  629  cd ..
+  630  ./ids_attacker1.sh
+  631  conda activate carlasec
+  632  cd Desktop/WSL/PythonAPI/AUSSE/
+  633  python ids_runtime.py
+  634  python ids_runtime.py 
+  635  python ids_runtime.py
+  636  python ids_runtime.py 
+  637  python ids_runtime.py
+  638  clear
+  639  python ids_runtime.py
+  640  clear
+  641  python ids_runtime.py
+  642  clear
+  643  python ids_runtime.py
+  644  python ids_runtime.py 
+  645  cd ../IDS_AttackLog/attack1
+  646  python eval_ids.py 
+  647  cd ../..
+  648  cd ids
+  649  python ids_runtime.py 
+  650  python ids_runtime.py
+  651  python ids_runtime.py 
+  652  candump vcan0
+  653  clear
+  654  candump vcan0
+  655  conda activate carlasec
+  656  cd Desktop/WSL/PythonAPI/AUSSE/
+  657  andump vcan0
+  658  clear
+  659  candump vcan0
+  660  clear
+  661  candump vcan0
+  662  candump vcan00
+  663  candump vcan0
+  664  clear
+  665  candump vcan0
+  666  candump vcan0 > testnumberofmessage.txt
+  667  python test_location.py 
+  668  python ids_carlavehiclerun.py --attacker
+  669  ./ids_attacker.sh 
+  670  dos2unix attacker.sh
+  671  chmod +x attacker.sh
+  672  ./attacker.sh
+  673  python ids_carlavehiclerun.py --attacker
+  674  ./attacker.sh
+  675  dos2unix ids_attacker.sh
+  676  chmod +x ids_attacker.sh
+  677  ./ids_attacker.sh 
+  678  python ids_carlavehiclerun.py --attacker
+  679  ./ids_attacker.sh 
+  680  dos2unix ids_attacker.sh
+  681  chmod +x ids_attacker.sh
+  682  ./ids_attacker.sh 
+  683  python ids_carlavehiclerun.py
+  684  python ids_carlavehiclerun.py --attacker
+  685  ./ids_attacker.sh 
+  686  python ids_carlavehiclerun.py
+  687  python ids_carlavehiclerun.py --attacker
+  688  python client_run.py --loop
+  689  python test_location.py 
+  690  python client_run.py --loop
+  691  python test_location.py 
+  692  python client_run.py --loop
+  693  python test_location.py 
+  694  python client_run.py --loop
+  695  python test_location.py 
+  696  python client_run.py --loop
+  697  python test_location.py 
+  698  python client_run.py --loop
+  699  python test_location.py 
+  700  python client_run.py --loop
+  701  clear
+  702  python client_run.py --loop
+  703  python test_location.py 
+  704  python client_run.py --loop
+  705  python test_location.py 
+  706  python client_run.py --loop
+  707  python test_location.py 
+  708  python client_run.py --loop
+  709  python test_location.py 
+  710  python client_run.py --loop
+  711  python test_location.py 
+  712  python client_run.py --loop
+  713  python test_location.py 
+  714  python client_run.py --loop
+  715  python test_location.py 
+  716  python client_run.py --loop
+  717  python test_location.py 
+  718  clear
+  719  python client_run.py --loop
+  720  clear
+  721  python test_location.py 
+  722  python client_run.py --loop
+  723  python test_location.py 
+  724  python client_run.py --loop
+  725  python ids_carlavehiclerun.py 
+  726  python ids_carlavehiclerun.py --attacker
+  727  clear
+  728  python ids_carlavehiclerun.py --attacker
+  729  python ids_carlavehiclerun.py --attackerclear
+  730  clear
+  731  python ids_carlavehiclerun.py --attacker
+  732  clear
+  733  python ids_carlavehiclerun.py --attacker
+  734  python ids_carlavehiclerun.py --attackerclear
+  735  clear
+  736  python ids_carlavehiclerun.py --attackerclear
+  737  python ids_carlavehiclerun.py --attacker
+  738  python ids_server_with_sniffer.py 
+  739  candump vcan0
+  740  python ids_carlavehiclerun.py --attacker
+  741  ./ids_attacker1.sh 
+  742  python ids_carlavehiclerun.py --attacker
+  743  ./ids_attacker.sh 
+  744  python ids_carlavehiclerun.py --attacker
+  745  python no_render1.py 
+  746  python client_run.py --spawnpos 97,79 
+  747  python client_run.py --spawnpos 97,79 --attacker
+  748  python test_location.py 
+  749  python client_run.py --spawnpos 97,79 --attacker
+  750  python test_location.py 
+  751  python client_run.py --spawnpos 97,79 --attacker
+  752  python test_location.py 
+  753  python client_run.py --spawnpos 97,79 --attacker
+  754  python ids_carlavehiclerun.py 
+  755  python test_location.py 
+  756  python client_run.py --spawnpos 97,79 --attacker
+  757  python test_location.py 
+  758  python client_run.py --spawnpos 97,79 --attacker
+  759  python test_location.py 
+  760  python client_run.py --spawnpos 97,79 --attacker
+  761  python test_location.py 
+  762  python client_run.py --spawnpos 97,79 --attacker
+  763  python test_location.py 
+  764  python client_run.py --spawnpos 97,79 --attacker
+  765  python test_location.py 
+  766  python client_run.py --spawnpos 97,79 --attacker
+  767  python test_location.py 
+  768  python client_run.py --spawnpos 97,79 --attacker
+  769  python test_location.py 
+  770  python client_run.py --spawnpos 97,79 --attacker
+  771  python test_location.py 
+  772  python client_run.py --spawnpos 97,79 --attacker
+  773  python test_location.py 
+  774  python client_run.py --spawnpos 97,79 --attacker
+  775  python test_location.py 
+  776  python client_run.py --spawnpos 97,79 --attacker
+  777  python test_location.py 
+  778  python test_location.py 
+  779  python client_run.py --spawnpos 97,79 --attacker
+  780  python test_location.py 
+  781  python client_run.py --spawnpos 97,79 --attacker
+  782  python test_location.py 
+  783  python client_run.py --spawnpos 97,79 --attacker
+  784  python test_location.py 
+  785  python client_run.py --spawnpos 97,79 --attacker
+  786  python test_location.py 
+  787  python client_run.py --spawnpos 97,79 --attacker
+  788  clear
+  789  python test_location.py 
+  790  python ids_carlavehiclerun.py --attacker
+  791  $((0x1A0))
+  792  python ids_carlavehiclerun.py --attacker
+  793  python test_location.py 
+  794  python ids_carlavehiclerun.py --attacker
+  795  ./ids_attacker1.sh 
+  796  ./ids_attacker2.sh 
+  797  dos2unix ids_attacker2.sh
+  798  chmod +x ids_attacker2.sh
+  799  ./ids_attacker2.sh 
+  800  python ids_carlavehiclerun.py --attacker
+  801  clear
+  802  cd invehicle_network/protocol/
+  803  python uds_server
+  804  python uds_server.py 
+  805  clear
+  806  python uds_server.py 
+  807  pip install crypto
+  808  clear
+  809  python uds_server.py 
+  810  python -m pip install pycryptodome
+  811  pip uninstall crypto
+  812  clear
+  813  python uds_server.py 
+  814  conda activate carlasec
+  815  cd Desktop/WSL/PythonAPI/AUSSE/
+  816  python client_run.py --loop --sniff --attacker
+  817  clear
+  818  python client_run.py --loop --sniff --attacker
+  819  python test_location.py 
+  820  python client_run.py --loop --sniff --attacker
+  821  python test_location.py 
+  822  python client_run.py --loop --sniff --attacker
+  823  python test_location.py 
+  824  python client_run.py --loop --sniff
+  825  python test_location.py 
+  826  python client_run.py --loop --sniff --attacker
+  827  python test_location.py 
+  828  python client_run.py --loop --sniff --attacker
+  829  python test_location.py 
+  830  python client_run.py --loop --sniff --attacker
+  831  python test_location.py 
+  832  python ids_server.py 
+  833  ./attack.sh
+  834  ./attacker.sh
+  835  while true; do cansend vcan0 000001A0#5508010100000012; done
+  836  while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.3; done
+  837  hile true; do cansend vcan0 000001A0#5508010100000012; sleep 0.2; done
+  838  while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.2; done
+  839  while true; do cansend vcan0 000001A0#5508010100000012; done
+  840  python ids_server.py 
+  841  python ids_server_with_sniffer.py 
+  842  ip -details link show vcan0
+  843  ifconfig
+  844  python ids_server_with_sniffer.py 
+  845  clear
+  846  python ids_server_with_sniffer.py 
+  847  clear
+  848  python ids_server_with_sniffer.py 
+  849  python dbc_encode.py 
+  850  python ids_carlavehiclerun.py 
+  851  sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000001A0#781000f0203002ca; done; sleep 8; done
+  852  python ids_server_with_sniffer.py 
+  853  ./ids_attack1.sh
+  854  ./ids_attacker1.sh
+  855  python ids_server_with_sniffer.py 
+  856  cd ids
+  857  ./ids_attacker1.sh
+  858  cd.. 
+  859  cd ..
+  860  ./ids_attacker1.sh 
+  861  python ids_server_with_sniffer.py 
+  862  clear
+  863  cd invehicle_network/protocol/
+  864  python uds_client.py 
+  865  python drscalc.py 
+  866  conda activate carlasec
+  867  python drscalc.py 
+  868  $((0x1A0))
+  869  conda activate carlasec
+  870  python filter_log.py
+  871  python filter_sniff_log_attack.py
+  872  python eval_ids.py
+  873  python filter_log.py
+  874  python filter_sniff_log_attack.py
+  875  python eval_ids.py
+  876  python filter_log.py
+  877  python filter_sniff_log_attack.py
+  878  python eval_ids.py
+  879  python filter_log.py
+  880  python filter_sniff_log_attack.py
+  881  python eval_ids.py
+  882  python filter_log.py
+  883  python filter_sniff_log_attack.py
+  884  python eval_ids.py
+  885  python filter_log.py
+  886  python filter_sniff_log_attack.py
+  887  python filter_log.py
+  888  python filter_sniff_log_attack.py
+  889  python eval_ids.py
+  890  python filter_log.py
+  891  python filter_sniff_log_attack.py
+  892  python eval_ids.py
+  893  python filter_log.py
+  894  python filter_sniff_log_attack.py
+  895  python eval_ids.py
+  896  python filter_log.py
+  897  python filter_sniff_log_attack.py
+  898  python eval_ids.py
+  899  python filter_log.py
+  900  python filter_sniff_log_attack.py
+  901  python eval_ids.py
+  902  python filter_log.py
+  903  python filter_sniff_log_attack.py
+  904  python filter_log.py
+  905  python filter_sniff_log_attack.py
+  906  python eval_ids.py
+  907  python filter_log.py
+  908  python filter_sniff_log_attack.py
+  909  python eval_ids.py
+  910  python filter_log.py
+  911  python filter_sniff_log_attack.py
+  912  python eval_ids.py
+  913  python filter_log.py
+  914  python filter_sniff_log_attack.py
+  915  python eval_ids.py
+  916  python filter_log.py
+  917  python filter_sniff_log_attack.py
+  918  python eval_ids.py
+  919  python filter_log.py
+  920  python filter_sniff_log_attack.py
+  921  python eval_ids.py
+  922  python filter_log.py
+  923  python filter_sniff_log_attack.py
+  924  python eval_ids.py
+  925  python filter_log.py
+  926  python filter_sniff_log_attack.py
+  927  python eval_ids.py
+  928  python filter_log.py
+  929  python filter_sniff_log_attack.py
+  930  python eval_ids.py
+  931  python filter_log.py
+  932  python filter_sniff_log_attack.py
+  933  python eval_ids.py
+  934  python filter_log.py
+  935  python filter_sniff_log_attack.py
+  936  python eval_ids.py
+  937  python filter_log.py
+  938  python filter_sniff_log_attack.py
+  939  python eval_ids.py
+  940  python filter_log.py
+  941  python filter_sniff_log_attack.py
+  942  python eval_ids.py
+  943  conda activate carlasec
+  944  cd Desktop/WSL/PythonAPI/AUSSE/
+  945  clear
+  946  wc -l attack_frames.log
+  947  cat /sys/class/net/vcan0/statistics/rx_dropped
+  948  cat /sys/class/net/vcan0/statistics/rx_errors
+  949  candump vcan0 -l > candump_vcan0.log &
+  950  tail -F candump_vcan0.log
+  951  candump vcan0 -l > candump_vcan0.log &
+  952  candump vcan0 -l > candump_vcan0.log
+  953  cd ids
+  954  candump vcan0
+  955  clear
+  956  candump vcan0\
+  957  clear
+  958  candump vcan0
+  959  clear
+  960  candump vcan0
+  961  cls
+  962  clear
+  963  candump vcan0
+  964  clear
+  965  candump vcan0
+  966  clear
+  967  candump vcan0
+  968  cd ..
+  969  python test_vcan_loopback.py 
+  970  ifconfig
+  971  sudo ip link set vcan0 type can loopback on
+  972  python test_vcan_loopback.py 
+  973  candump vcan0
+  974  clear
+  975  candump vcan0
+  976  cd ids
+  977  python filter_log.py 
+  978  python filter_sniff_log_attack.py 
+  979  python eval_ids.py 
+  980  python
+  981  python filter_log.py 
+  982  python filter_sniff_log_attack.py 
+  983  python eval_ids.py 
+  984  cd ..
+  985  python tune_entropy_ids.py 
+  986  cd ids/
+  987  python filter_log.py 
+  988  python filter_sniff_log_attack.py 
+  989  python eval_ids.py 
+  990  python filter_log.py 
+  991  python filter_sniff_log_attack.py 
+  992  python eval_ids.py 
+  993  python filter_log.py 
+  994  python filter_sniff_log_attack.py 
+  995  python eval_ids.py 
+  996  cd ..
+  997  python
+  998  pwd
+  999  python
+ 1000  python eval_ids.py 
+ 1001  cd ids
+ 1002  python eval_ids.py 
+ 1003  clear
+ 1004  python filter_log.py 
+ 1005  python filter_sniff_log_attack.py 
+ 1006  python eval_ids.py 
+ 1007  pytho
+ 1008  pwd
+ 1009  python
+ 1010  python filter_log.py 
+ 1011  python filter_sniff_log_attack.py 
+ 1012  python eval_ids.py 
+ 1013  python filter_log.py 
+ 1014  python filter_sniff_log_attack.py 
+ 1015  python eval_ids.py 
+ 1016  python filter_log.py 
+ 1017  python filter_sniff_log_attack.py 
+ 1018  python eval_ids.py 
+ 1019  python filter_log.py 
+ 1020  python filter_sniff_log_attack.py 
+ 1021  python eval_ids.py 
+ 1022  python filter_log.py 
+ 1023  python filter_sniff_log_attack.py 
+ 1024  python eval_ids.py 
+ 1025  python filter_log.py 
+ 1026  python filter_sniff_log_attack.py 
+ 1027  python eval_ids.py 
+ 1028  python filter_log.py 
+ 1029  python filter_sniff_log_attack.py 
+ 1030  python eval_ids.py 
+ 1031  python filter_log.py 
+ 1032  python filter_sniff_log_attack.py 
+ 1033  python eval_ids.py 
+ 1034  python filter_log.py 
+ 1035  python filter_sniff_log_attack.py 
+ 1036  python eval_ids.py 
+ 1037  python filter_log.py 
+ 1038  python filter_sniff_log_attack.py 
+ 1039  python eval_ids.py 
+ 1040  python filter_log.py 
+ 1041  python filter_sniff_log_attack.py 
+ 1042  python eval_ids.py 
+ 1043  python filter_log.py 
+ 1044  python filter_sniff_log_attack.py 
+ 1045  python eval_ids.py 
+ 1046  python filter_log.py 
+ 1047  python filter_sniff_log_attack.py 
+ 1048  python eval_ids.py 
+ 1049  candump vcan0
+ 1050  python filter_log.py 
+ 1051  python filter_sniff_log_attack.py 
+ 1052  python eval_ids.py 
+ 1053  python filter_log.py 
+ 1054  python filter_sniff_log_attack.py 
+ 1055  python eval_ids.py 
+ 1056  candump vcan0
+ 1057  python filter_log.py 
+ 1058  python filter_sniff_log_attack.py 
+ 1059  python eval_ids.py 
+ 1060  python filter_log.py 
+ 1061  python filter_sniff_log_attack.py 
+ 1062  python eval_ids.py 
+ 1063  python filter_log.py 
+ 1064  python filter_sniff_log_attack.py 
+ 1065  python eval_ids.py 
+ 1066  bash
+ 1067  conda activate carlasec
+ 1068  cd Desktop/WSL/PythonAPI/AUSSE
+ 1069  clear
+ 1070  cd invehicle_network/protocol/
+ 1071  python uds_client.py
+ 1072  openssl genpkey -algorithm RSA -out tester_key.pem -pkeyopt rsa_keygen_bits:3072
+ 1073  python uds_client.py
+ 1074  python attacker_uds_rsa.py 
+ 1075  openssl genpkey -algorithm RSA -out attacker_key.pem -pkeyopt rsa_keygen_bits:3072
+ 1076  python attacker_uds_rsa.py 
+ 1077  python uds_client.py
+ 1078  python attacker_uds_rsa.py 
+ 1079  python uds_client.py
+ 1080  python attacker_uds_aes.py 
+ 1081  conda activate carlasec
+ 1082  cd Desktop/WSL/PythonAPI/AUSSE
+ 1083  cd invehicle_network/protocol/uds
+ 1084  cd invehicle_network/protocol/
+ 1085  clear
+ 1086  python ids
+ 1087  python uds_server
+ 1088  python uds_server.py
+ 1089  openssl rsa -in tester_key.pem -pubout -out tester_pub.pem
+ 1090  sudo cp tester_pub.pem /tmp/uds_pubkey.pem
+ 1091  cp tester_pub.pem /tmp/uds_pubkey.pem
+ 1092  cp tester_pub.pem /tmp1/uds_pubkey.pem
+ 1093  sudo cp tester_pub.pem /tmp/uds_pubkey.pem
+ 1094  dc temp
+ 1095  cd temp
+ 1096  clear
+ 1097  sudo cp tester_pub.pem /tmp/uds_pubkey.pem
+ 1098  cd tmp
+ 1099  cd /tmp
+ 1100  ls
+ 1101  cat /tmp/uds_pubkey.pem | head
+ 1102  cd mnt/c/Users/Chue/Desktop/WSL/PythonAPI/AUSSE/invehicle_network/protocol
+ 1103  cd /mnt/c/Users/Chue/Desktop/WSL/PythonAPI/AUSSE/invehicle_network/protocol
+ 1104  clear
+ 1105  cd /mnt/c/Users/Chue/Desktop/WSL/PythonAPI/AUSSE/invehicle_network/protocol
+ 1106  python uds_server.py 
+ 1107  conda activate carlasec\
+ 1108  conda activate carlasec
+ 1109  cd Desktop/WSL/PythonAPI/AUSSE
+ 1110  clear
+ 1111  sudo ./vcan.sh 
+ 1112  candump vcan0
+ 1113  clear
+ 1114  candump vcan0
+ 1115  clear
+ 1116  candump vcan0
+ 1117  clear
+ 1118  candump vcan0
+ 1119  conda activate carlasec
+ 1120  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1121  python no_render1.py 
+ 1122  python test_location.py 
+ 1123  python client_run.py --spaw-pos 97, 79 
+ 1124  python client_run.py --spawpos 97, 79 
+ 1125  python client_run.py --spawpos 97,79 
+ 1126  python client_run.py --spawnpos 97,79 
+ 1127  python test_location.py 
+ 1128  python client_run.py --spawnpos 97,79 
+ 1129  python test_location.py 
+ 1130  python client_run.py --spawnpos 97,79 
+ 1131  python test_location.py 
+ 1132  python client_run.py --spawnpos 97,79 
+ 1133  python test_location.py 
+ 1134  python client_run.py --spawnpos 97,79 
+ 1135  conda activate carlasec
+ 1136  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1137  cd invehicle_network/protocol/
+ 1138  python uds_client.py 
+ 1139  python attacker_uds_aes.py 
+ 1140  python uds_client.py 
+ 1141  conda activate carlasec
+ 1142  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1143  candump
+ 1144  sudo ./vcan.sh 
+ 1145  candump vcan0
+ 1146  conda activate carlasec
+ 1147  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1148  cd invehicle_network/protocol/
+ 1149  python uds_server.py
+ 1150  clear
+ 1151  python uds_server.py
+ 1152  conda activate carlasec
+ 1153  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1154  cd invehicle_network/protocol/
+ 1155  python uds_client
+ 1156  python uds_client.py 
+ 1157  python uds_client
+ 1158  python uds_client.py 
+ 1159  python attacker_uds_aes.py 
+ 1160  conda activate carlasec
+ 1161  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1162  sudo ./vcan.sh 
+ 1163  candump vcan0
+ 1164  conda activate carlasec
+ 1165  cd Desktop/WSL/PythonAPI/AUSSE/
+ 1166  cd camera
+ 1167  history > history.txt

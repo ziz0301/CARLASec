@@ -1,0 +1,3517 @@
+{
+  "summary": {
+    "attack_type": "unknown",
+    "controller_mode": "proposed_response",
+    "run_id": 6,
+    "start_positon": "x=-103.179, y=-14.435, z=0.600",
+    "number_of_vehicles": 1,
+    "number_of_walker": 0,
+    "destination_position": "x=14.130, y=69.714, z=0.600",
+    "Duration": 16.36135768890381,
+    "Red_light_infractions": 0,
+    "Stop_sign_infractions": 0,
+    "Offroad_infractions": 0,
+    "collision_pedestrian_count": 0,
+    "list_of_collision_pedestrian_infraction": [],
+    "collision_static_count": 0,
+    "list_of_collision_static_infraction": [],
+    "collision_vehicle_count": 0,
+    "list_of_collision_vehicle_infraction": [],
+    "offroad_count": 0,
+    "Total distance traveled": 109.36055745879955,
+    "number_of_IDS_alerts": 0,
+    "number_of_Safety_transitions": 0,
+    "number_of_MRC_transitions": 0,
+    "time_to_Observation": null,
+    "time_to_Safety": null,
+    "time_to_MRC": null,
+    "time_to_Recovery": null,
+    "time_spent_in_Normal": 16.49423750117421,
+    "time_spent_in_Observation": 0.0,
+    "time_spent_in_Safety": 0.0,
+    "time_spent_in_Recovery": 0.0,
+    "maximum_speed": 8.087363133412481,
+    "mean_speed": 6.75494676208012,
+    "DSR": 47.70362375520155,
+    "Route_completion": 0.47703623755201546,
+    "Infraction_penalty": 1.0,
+    "weather": "Default",
+    "agent": "Behavior",
+    "seed": null,
+    "fully_completed": false
+  },
+  "timeline": [
+    {
+      "time": 0.0,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.8598873019218481,
+      "distance_travelled": 0.0,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.8598873019218481,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.093,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.10039123147742568,
+      "distance_travelled": 0.09026061929762363,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.10039123147742568,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.168,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.23505717515947572,
+      "distance_travelled": 0.09788780100643635,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.23505717515947572,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.247,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.20617525279533047,
+      "distance_travelled": 0.11559383384883404,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.20617525279533047,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.315,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.15205071866707034,
+      "distance_travelled": 0.1359000001102686,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.15205071866707034,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.443,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.0704519599676772,
+      "distance_travelled": 0.1461123637855053,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.0704519599676772,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.487,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.051822289825861165,
+      "distance_travelled": 0.15188789181411266,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.051822289825861165,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.598,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.02386834902609078,
+      "distance_travelled": 0.15572695892570756,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.02386834902609078,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.679,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 0.8104318167981827,
+      "distance_travelled": 0.19833743564946865,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 0.8104318167981827,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.739,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 1.1129530698626058,
+      "distance_travelled": 0.2592893541087048,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 1.1129530698626058,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.821,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 1.458336046353617,
+      "distance_travelled": 0.36511168202845434,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 1.458336046353617,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 0.91,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 1.743812219309088,
+      "distance_travelled": 0.5109854695558865,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 1.743812219309088,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.165,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 2.6389462221196083,
+      "distance_travelled": 0.9478556251307573,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 2.6389462221196083,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.234,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 2.89857376911912,
+      "distance_travelled": 1.2610589924454234,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 2.89857376911912,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.442,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 3.9213265561649835,
+      "distance_travelled": 1.9751577507640554,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 3.9213265561649835,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.715,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 5.1281256135272555,
+      "distance_travelled": 3.22126744863671,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 5.1281256135272555,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.824,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 5.24949342701437,
+      "distance_travelled": 3.600521796896124,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 5.24949342701437,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.912,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 5.345027267810533,
+      "distance_travelled": 4.030234432013649,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 5.345027267810533,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 1.959,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 5.441675837258372,
+      "distance_travelled": 4.513453846367887,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 5.441675837258372,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.063,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 5.818303498249381,
+      "distance_travelled": 4.922539299083192,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 5.818303498249381,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.127,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.018573405446741,
+      "distance_travelled": 5.279624458753066,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.018573405446741,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.211,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.004183596635752,
+      "distance_travelled": 5.78917581001051,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.004183596635752,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.272,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.76984849493118,
+      "distance_travelled": 6.166763311446862,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.76984849493118,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.335,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.325680580701696,
+      "distance_travelled": 6.606931048745763,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.325680580701696,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.423,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.8618648481640445,
+      "distance_travelled": 7.491600884693609,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.8618648481640445,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.528,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 8.087363133412481,
+      "distance_travelled": 8.0388204782085,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 8.087363133412481,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.559,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 8.032163231313582,
+      "distance_travelled": 8.586493630340158,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 8.032163231313582,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.593,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.957670301642522,
+      "distance_travelled": 8.857596672087153,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.957670301642522,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.673,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.660575360308944,
+      "distance_travelled": 9.478186483634442,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.660575360308944,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.767,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.3538233490283895,
+      "distance_travelled": 9.964889835932121,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.3538233490283895,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.798,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.225050253813867,
+      "distance_travelled": 10.40397682057232,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.225050253813867,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.864,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.072792529048741,
+      "distance_travelled": 10.872409064896884,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.072792529048741,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.937,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.016128502931298,
+      "distance_travelled": 11.134963005076271,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.016128502931298,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 2.969,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.047562812954172,
+      "distance_travelled": 11.611676505278643,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.047562812954172,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.038,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.1724915131299785,
+      "distance_travelled": 12.100284057272212,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.1724915131299785,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.081,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.226507159519631,
+      "distance_travelled": 12.40957760199536,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.226507159519631,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.208,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.586419689371917,
+      "distance_travelled": 13.051316848550952,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.586419689371917,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.271,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.840995674050099,
+      "distance_travelled": 13.59692188664364,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.840995674050099,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.314,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.891680841431369,
+      "distance_travelled": 14.186668392454306,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.891680841431369,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.393,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.687828752402317,
+      "distance_travelled": 14.801456662560703,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.687828752402317,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.508,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.361831048766477,
+      "distance_travelled": 15.310414503650582,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.361831048766477,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.599,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.100746717285286,
+      "distance_travelled": 15.968591427795532,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.100746717285286,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.672,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.0356232145215145,
+      "distance_travelled": 16.571478590589734,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.0356232145215145,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.858,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.3367369030328184,
+      "distance_travelled": 17.74687533376822,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.3367369030328184,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 3.982,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.67726028255641,
+      "distance_travelled": 18.804932805632266,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.67726028255641,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.099,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.629502286413989,
+      "distance_travelled": 19.714198900707153,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.629502286413989,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.139,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.6063922094970104,
+      "distance_travelled": 20.303440772014817,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.6063922094970104,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.266,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.152726974123376,
+      "distance_travelled": 20.92007897309037,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.152726974123376,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.366,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.93805260287496,
+      "distance_travelled": 21.62178896494854,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.93805260287496,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.412,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.822061905399869,
+      "distance_travelled": 22.254804030215016,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.822061905399869,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.496,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.946263942465757,
+      "distance_travelled": 22.830995729747055,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.946263942465757,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.569,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.100411340995156,
+      "distance_travelled": 23.33935772618316,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.100411340995156,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.64,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.317962961207863,
+      "distance_travelled": 23.853512950399853,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.317962961207863,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.709,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.559947865092702,
+      "distance_travelled": 24.36712685174488,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.559947865092702,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.778,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.699379542014871,
+      "distance_travelled": 24.630518708457707,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.699379542014871,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.811,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.698063706973609,
+      "distance_travelled": 25.147509015420923,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.698063706973609,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.892,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.487619565574139,
+      "distance_travelled": 25.75959572266814,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.487619565574139,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 4.957,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.309135402502929,
+      "distance_travelled": 26.24060467158728,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.309135402502929,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.019,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.168009999872573,
+      "distance_travelled": 26.695907220232414,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.168009999872573,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.087,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.038061463701254,
+      "distance_travelled": 27.17646301166506,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.038061463701254,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.193,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.067719771047422,
+      "distance_travelled": 27.66050766651249,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.067719771047422,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.259,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.231109820022986,
+      "distance_travelled": 28.396698423926043,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.231109820022986,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.333,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.401964595671095,
+      "distance_travelled": 28.93991368682263,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.401964595671095,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.398,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.665936677103373,
+      "distance_travelled": 29.43695984544733,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.665936677103373,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.492,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.743341830196643,
+      "distance_travelled": 29.951697147288584,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.743341830196643,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.554,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.615276195149965,
+      "distance_travelled": 30.401307428976747,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.615276195149965,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.583,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.4728581553987015,
+      "distance_travelled": 30.85649564223782,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.4728581553987015,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.643,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.3836426196958636,
+      "distance_travelled": 31.298115707628916,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.3836426196958636,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.708,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.230206334139907,
+      "distance_travelled": 31.771714731791054,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.230206334139907,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.774,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.163469637367014,
+      "distance_travelled": 32.245736647723255,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.163469637367014,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.893,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.185806327090055,
+      "distance_travelled": 32.77476951435463,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.185806327090055,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.928,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.263376633466508,
+      "distance_travelled": 33.352716314639174,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.263376633466508,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 5.995,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.4639129761114065,
+      "distance_travelled": 33.84338825425658,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.4639129761114065,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.069,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.745122001842613,
+      "distance_travelled": 34.41198132821718,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.745122001842613,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.137,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.803807441085268,
+      "distance_travelled": 34.9357934359608,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.803807441085268,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.202,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.711771276755056,
+      "distance_travelled": 35.44161488545746,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.711771276755056,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.297,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.426040711939707,
+      "distance_travelled": 36.15499239522545,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.426040711939707,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.367,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.218168900438598,
+      "distance_travelled": 36.66485850195588,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.218168900438598,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.429,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.106460085879793,
+      "distance_travelled": 37.11015018577409,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.106460085879793,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.499,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.0663935373719795,
+      "distance_travelled": 37.59908118259508,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.0663935373719795,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.569,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.13315136805761,
+      "distance_travelled": 38.09496302981545,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.13315136805761,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.609,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.182298243783457,
+      "distance_travelled": 38.38472268902949,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.182298243783457,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.649,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.226902582347404,
+      "distance_travelled": 38.67098797628108,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.226902582347404,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.721,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.4622722560850105,
+      "distance_travelled": 39.2059444227537,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.4622722560850105,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.793,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.648670696953214,
+      "distance_travelled": 39.75192954327046,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.648670696953214,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.951,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.536180519618998,
+      "distance_travelled": 40.66564958694617,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.536180519618998,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 6.989,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.405577515094907,
+      "distance_travelled": 41.2451848817618,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.405577515094907,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.136,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.044867160750072,
+      "distance_travelled": 41.7787901127502,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.044867160750072,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.258,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.9297389174456185,
+      "distance_travelled": 42.73613745594491,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.9297389174456185,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.429,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.378186207102825,
+      "distance_travelled": 44.02901679152447,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.378186207102825,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.513,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.543372314126567,
+      "distance_travelled": 44.70328898594063,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.543372314126567,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.552,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.587945229837267,
+      "distance_travelled": 45.2884514885244,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.587945229837267,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.67,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.43937469675284,
+      "distance_travelled": 45.88248119914444,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.43937469675284,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.742,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.324768241209243,
+      "distance_travelled": 46.48000605883836,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.324768241209243,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.789,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.180893162612435,
+      "distance_travelled": 47.05684712308489,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.180893162612435,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.876,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.194870347155074,
+      "distance_travelled": 47.6789488094538,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.194870347155074,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.919,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.303961686413923,
+      "distance_travelled": 47.993630681097805,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.303961686413923,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 7.994,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.428046266859297,
+      "distance_travelled": 48.54856887688544,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.428046266859297,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.076,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.61824521503646,
+      "distance_travelled": 49.163325080712774,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.61824521503646,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.192,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.527182131604783,
+      "distance_travelled": 49.781429143606196,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.527182131604783,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.226,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.458110620838324,
+      "distance_travelled": 50.300647287947854,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.458110620838324,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.292,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.32564684791784,
+      "distance_travelled": 50.78674068714732,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.32564684791784,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.356,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.235664198816251,
+      "distance_travelled": 51.25363343560941,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.235664198816251,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.428,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.169036066074014,
+      "distance_travelled": 51.49590872678682,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.169036066074014,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.461,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.209412585536322,
+      "distance_travelled": 52.0148589118758,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.209412585536322,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.494,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.207587592932414,
+      "distance_travelled": 52.2525868435862,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.207587592932414,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.6,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.9959700746595805,
+      "distance_travelled": 52.76679897557389,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.9959700746595805,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.636,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.8803300781668355,
+      "distance_travelled": 53.260891554976986,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.8803300781668355,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.703,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.736960597053124,
+      "distance_travelled": 53.716263771262504,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.736960597053124,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.74,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.654473667947594,
+      "distance_travelled": 53.96395415974064,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.654473667947594,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.81,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.607835475760155,
+      "distance_travelled": 54.427667803875536,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.607835475760155,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.882,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.662566325293078,
+      "distance_travelled": 54.90986368970684,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.662566325293078,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 8.958,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.8980230724102585,
+      "distance_travelled": 55.42807778518315,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.8980230724102585,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.023,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.065816016023297,
+      "distance_travelled": 55.88044352611089,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.065816016023297,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.091,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.11471194915055,
+      "distance_travelled": 56.3641661048961,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.11471194915055,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.157,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.000074691626922,
+      "distance_travelled": 56.82633843922737,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.000074691626922,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.24,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.695159532990085,
+      "distance_travelled": 57.127381513383504,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.695159532990085,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.278,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.587916012259813,
+      "distance_travelled": 57.64564981540425,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.587916012259813,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.368,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.464834889356123,
+      "distance_travelled": 58.23431833107245,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.464834889356123,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.406,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.434949257915006,
+      "distance_travelled": 58.48238730797231,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.434949257915006,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.494,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.5808545421647215,
+      "distance_travelled": 59.05624641977221,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.5808545421647215,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.57,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.851222384455154,
+      "distance_travelled": 59.56750747720585,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.851222384455154,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.611,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.936744513089313,
+      "distance_travelled": 59.85007506009476,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.936744513089313,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.692,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.075271512540429,
+      "distance_travelled": 60.418703699418224,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.075271512540429,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.765,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.990785604141467,
+      "distance_travelled": 60.929080448799,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.990785604141467,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.838,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.818049124917364,
+      "distance_travelled": 61.42982130951484,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.818049124917364,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.909,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.623528202195794,
+      "distance_travelled": 61.907810740608376,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.623528202195794,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 9.974,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.506987751473148,
+      "distance_travelled": 62.32708192219333,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.506987751473148,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.044,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.474666949544759,
+      "distance_travelled": 62.5834979675138,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.474666949544759,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.084,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.478228371487457,
+      "distance_travelled": 63.04147672597421,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.478228371487457,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.188,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.69402634184099,
+      "distance_travelled": 63.73148120558807,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.69402634184099,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.271,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.966170295016167,
+      "distance_travelled": 64.29381994548746,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.966170295016167,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.379,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.282153510600705,
+      "distance_travelled": 65.0624968177634,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.282153510600705,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.566,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.97835961096543,
+      "distance_travelled": 65.9881975363477,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.97835961096543,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.616,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.835962427882467,
+      "distance_travelled": 66.75245594338986,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.835962427882467,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.743,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.524624574504295,
+      "distance_travelled": 67.31901328431306,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.524624574504295,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.795,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.470718831282257,
+      "distance_travelled": 67.93142534033527,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.470718831282257,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.906,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.5119404617428325,
+      "distance_travelled": 68.22800567653844,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.5119404617428325,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 10.95,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.696119426161048,
+      "distance_travelled": 68.94654135943314,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.696119426161048,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.021,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.8893685460388845,
+      "distance_travelled": 69.43113529181998,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.8893685460388845,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.101,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.058324838553274,
+      "distance_travelled": 69.67429192189022,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.058324838553274,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.16,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.0352211458849965,
+      "distance_travelled": 70.40461722140476,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.0352211458849965,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.23,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.895221638306371,
+      "distance_travelled": 70.89361449931587,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.895221638306371,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.268,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.777732850387166,
+      "distance_travelled": 71.1555726103028,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.777732850387166,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.339,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.646417775276506,
+      "distance_travelled": 71.6367788745253,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.646417775276506,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.429,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.674069902028494,
+      "distance_travelled": 72.23691713280826,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.674069902028494,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.505,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.761117060628619,
+      "distance_travelled": 72.50308368134355,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.761117060628619,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.536,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.886844980511275,
+      "distance_travelled": 72.95705708092748,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.886844980511275,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.602,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.078262056471644,
+      "distance_travelled": 73.42067116701894,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.078262056471644,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.683,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.9888862144154995,
+      "distance_travelled": 73.99583560643225,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.9888862144154995,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.748,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.892488959841841,
+      "distance_travelled": 74.44108699989786,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.892488959841841,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.815,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.842931359885893,
+      "distance_travelled": 74.90186981304802,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.842931359885893,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.888,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.8157245725655695,
+      "distance_travelled": 75.40391384148391,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.8157245725655695,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.922,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 6.859371902762114,
+      "distance_travelled": 75.63779686788618,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 6.859371902762114,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 11.996,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.032991494258942,
+      "distance_travelled": 76.15214009576403,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.032991494258942,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.098,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.328463148931725,
+      "distance_travelled": 76.64743566929613,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.328463148931725,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.144,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.417103173109648,
+      "distance_travelled": 77.2227354671094,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.417103173109648,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.228,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.565743052749676,
+      "distance_travelled": 77.85478840814848,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.565743052749676,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.267,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.549746987594962,
+      "distance_travelled": 78.14762501137294,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.549746987594962,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.346,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.355369122202298,
+      "distance_travelled": 78.74191608252056,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.355369122202298,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.389,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.2885858628585725,
+      "distance_travelled": 79.05087468333406,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.2885858628585725,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.47,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.206095492417435,
+      "distance_travelled": 79.63732319242808,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.206095492417435,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.515,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.235660032522074,
+      "distance_travelled": 79.96170823735794,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.235660032522074,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.56,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.2867272316351785,
+      "distance_travelled": 80.29380031501523,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.2867272316351785,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.649,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.49859151668645,
+      "distance_travelled": 80.94876493509638,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.49859151668645,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.747,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.651423780569122,
+      "distance_travelled": 81.6962421990844,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.651423780569122,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.795,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.6156896029093115,
+      "distance_travelled": 82.05929151323902,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.6156896029093115,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.894,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.376137399344529,
+      "distance_travelled": 82.41380730093574,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.376137399344529,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 12.938,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.257649928553089,
+      "distance_travelled": 83.121423849781,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.257649928553089,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.026,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.1097711354580895,
+      "distance_travelled": 83.42086253696489,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.1097711354580895,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.065,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.084294655579362,
+      "distance_travelled": 84.03255066209843,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.084294655579362,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.106,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.14024294265584,
+      "distance_travelled": 84.32583438053629,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.14024294265584,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.191,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.269627607655519,
+      "distance_travelled": 84.93366354321671,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.269627607655519,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.232,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.400233974860479,
+      "distance_travelled": 85.2369912972379,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.400233974860479,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.357,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.728452039014158,
+      "distance_travelled": 85.8260810353912,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.728452039014158,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.397,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.787457351817235,
+      "distance_travelled": 86.49989613573557,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.787457351817235,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.47,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.681892195535855,
+      "distance_travelled": 87.06567121090066,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.681892195535855,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.544,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.471612513416733,
+      "distance_travelled": 87.62198207001242,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.471612513416733,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.627,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.254848709209218,
+      "distance_travelled": 87.88638570514806,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.254848709209218,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.666,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.1650167826888636,
+      "distance_travelled": 88.51084592470478,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.1650167826888636,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.761,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.040669564135344,
+      "distance_travelled": 88.79248786741753,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.040669564135344,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.871,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.140505742608016,
+      "distance_travelled": 89.57960791171598,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.140505742608016,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 13.984,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.465171021796206,
+      "distance_travelled": 90.25844434104619,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.465171021796206,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.028,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.601776593900328,
+      "distance_travelled": 91.12438171036017,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.601776593900328,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.185,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.490078456955184,
+      "distance_travelled": 92.32052038294927,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.490078456955184,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.228,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.390731462603598,
+      "distance_travelled": 92.63811159058722,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.390731462603598,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.324,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.208369452971913,
+      "distance_travelled": 93.33940371422203,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.208369452971913,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.472,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.183031819099262,
+      "distance_travelled": 94.06329834819515,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.183031819099262,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.517,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.268875793398893,
+      "distance_travelled": 94.72186704544627,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.268875793398893,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.591,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.504661549432,
+      "distance_travelled": 95.26947358857943,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.504661549432,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.665,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.6571573728728275,
+      "distance_travelled": 95.82848085135254,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.6571573728728275,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.735,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.632009422128051,
+      "distance_travelled": 96.3720028011756,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.632009422128051,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.814,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.445788298858956,
+      "distance_travelled": 96.68160935365904,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.445788298858956,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.857,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.33682850282575,
+      "distance_travelled": 97.27899155281935,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.33682850282575,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 14.916,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.213370436670556,
+      "distance_travelled": 97.71116486475033,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.213370436670556,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.001,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.149751674306964,
+      "distance_travelled": 98.32074626277036,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.149751674306964,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.079,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.259805866929682,
+      "distance_travelled": 98.88073936265975,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.259805866929682,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.122,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.360054765746125,
+      "distance_travelled": 99.1962979921725,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.360054765746125,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.198,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.5807365999498275,
+      "distance_travelled": 99.76753576563281,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.5807365999498275,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.269,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.649795187615674,
+      "distance_travelled": 100.30510261453857,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.649795187615674,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.31,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.608593109493225,
+      "distance_travelled": 100.62165323133777,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.608593109493225,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.38,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.4473785079662465,
+      "distance_travelled": 101.14700881325804,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.4473785079662465,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.452,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.278656254438513,
+      "distance_travelled": 101.67672024657418,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.278656254438513,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.519,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.180521118483309,
+      "distance_travelled": 102.15646545052914,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.180521118483309,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.589,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.160150402074472,
+      "distance_travelled": 102.66106082202457,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.160150402074472,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.657,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.255873953784979,
+      "distance_travelled": 103.15109511612516,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.255873953784979,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.732,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.3889392390984545,
+      "distance_travelled": 103.41595906344351,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.3889392390984545,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.776,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.517518069900957,
+      "distance_travelled": 104.02621983411802,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.517518069900957,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.857,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.645459561080748,
+      "distance_travelled": 104.64200056451895,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.645459561080748,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 15.977,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.475282334061355,
+      "distance_travelled": 105.24190762757115,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.475282334061355,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.014,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.382966219200673,
+      "distance_travelled": 105.82683514065336,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.382966219200673,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.084,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.255094400793329,
+      "distance_travelled": 106.33701678961698,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.255094400793329,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.153,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.200105842248622,
+      "distance_travelled": 106.8372038332768,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.200105842248622,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.268,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.3294883012093575,
+      "distance_travelled": 107.67403973424726,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.3294883012093575,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.326,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.419554455800986,
+      "distance_travelled": 108.1018064217232,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.419554455800986,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.408,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.526852425217531,
+      "distance_travelled": 108.71398331033849,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.526852425217531,
+        "speed_risk": false
+      }
+    },
+    {
+      "time": 16.494,
+      "state": "Normal",
+      "ids_alert": false,
+      "ego_speed": 7.454344191042266,
+      "distance_travelled": 109.36055745879955,
+      "mrc_active": false,
+      "rss_info": {
+        "reason": "no_target",
+        "long_danger": false,
+        "lat_danger": false,
+        "offroad_risk": false,
+        "ego_speed": 7.454344191042266,
+        "speed_risk": false
+      }
+    }
+  ]
+}

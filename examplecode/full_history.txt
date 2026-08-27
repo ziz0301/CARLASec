@@ -1,0 +1,149 @@
+[
+    {
+        "frame": 1478,
+        "impulse": {
+            "x": -9648.48828125,
+            "y": 13790.1455078125,
+            "z": -1215.01416015625
+        },
+        "intensity": 16874.17253228851,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.pole"
+    },
+    {
+        "frame": 1678,
+        "impulse": {
+            "x": -7864.23291015625,
+            "y": -16865.65234375,
+            "z": 1940.67529296875
+        },
+        "intensity": 18709.960150630035,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.pole"
+    },
+    {
+        "frame": 1783,
+        "impulse": {
+            "x": 23327.314453125,
+            "y": -4449.4931640625,
+            "z": -2442.83984375
+        },
+        "intensity": 23873.186957635673,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.building"
+    },
+    {
+        "frame": 1952,
+        "impulse": {
+            "x": 16.379364013671875,
+            "y": -12072.62109375,
+            "z": 0.0
+        },
+        "intensity": 12072.632204984253,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.static"
+    },
+    {
+        "frame": 1957,
+        "impulse": {
+            "x": 0.9667537212371826,
+            "y": -712.558349609375,
+            "z": 0.0
+        },
+        "intensity": 712.5590054239675,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.static"
+    },
+    {
+        "frame": 2177,
+        "impulse": {
+            "x": -1007.7740478515625,
+            "y": 388.3416748046875,
+            "z": 95.44159698486328
+        },
+        "intensity": 1084.2171767447028,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.trafficsign"
+    },
+    {
+        "frame": 2178,
+        "impulse": {
+            "x": -135.66458129882812,
+            "y": 58.14741897583008,
+            "z": 10.708087921142578
+        },
+        "intensity": 147.9887296366314,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.trafficsign"
+    },
+    {
+        "frame": 2236,
+        "impulse": {
+            "x": -1245.27197265625,
+            "y": -23948.853515625,
+            "z": 113.61300659179688
+        },
+        "intensity": 23981.476078715714,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.vegetation"
+    },
+    {
+        "frame": 2251,
+        "impulse": {
+            "x": 9.927786827087402,
+            "y": -280.9987487792969,
+            "z": 1.332086205482483
+        },
+        "intensity": 281.1772256433179,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.vegetation"
+    },
+    {
+        "frame": 2252,
+        "impulse": {
+            "x": 0.5054250955581665,
+            "y": -14.305686950683594,
+            "z": 0.06781669706106186
+        },
+        "intensity": 14.314773234759226,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.vegetation"
+    },
+    {
+        "frame": 2311,
+        "impulse": {
+            "x": -230.16763305664062,
+            "y": -4426.54443359375,
+            "z": 20.99945831298828
+        },
+        "intensity": 4432.574166230741,
+        "actor1_id": 24,
+        "actor1_type": "vehicle.mercedes.coupe_2020",
+        "actor2_id": 0,
+        "actor2_type": "static.vegetation"
+    }
+]
+Number of collisions with vehicles: 0
+Number of collisions with pedestrians: 0
+Number of collisions with others: 0
+Number of all collisions: 0

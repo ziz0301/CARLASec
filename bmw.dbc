@@ -1,0 +1,104 @@
+VERSION ""
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+
+BU_: EON XXX RDC SZL VGSG JBBF RFK FLA RAD1 CAS CID AHM HKL HUD EKP DWA DSC SM_BF GWS VDM DDE1 ACI CCC DSC SM_FA CTM LDM RSE MRSZ VDA EDCK ZBE EGS ACC_Sensor Kombi IHKA ARS ACSM FZD PGS NVC AFS DME FRMFA EMF FKA VSW EPS PDC DKG EHC Diagnosetool_PT_CAN Diagnosetool_K_CAN_System Vector__XXX
+
+
+BO_ 587 DoorControlSensors: 8 BDC
+  SG_ Door_FL : 0|2@1+ (1.0,0.0) [0.0|3.0] ""  CLU
+  SG_ Door_FR : 2|2@1+ (1.0,0.0) [0.0|3.0] ""  CLU
+  SG_ Door_RL : 4|2@1+ (1.0,0.0) [0.0|3.0] ""  CLU
+  SG_ Door_RR : 6|2@1+ (1.0,0.0) [0.0|3.0] ""  CLU
+  SG_ TrunkStatus: 8|2@1+ (1.0,0.0) [0.0|3.0] ""  CLU
+  SG_ MirrorStatus : 10|2@1+ (1.0,0.0) [0.0|3.0] ""  CLU
+  SG_ Checksum_416 : 56|8@1+ (1,0) [0|15] "" XXX
+
+BO_ 758 LightControl: 8 BDC
+  SG_ LowBeam : 0|1@1+ (1,0) [0|1] ""  BDC
+  SG_ HighBeam : 1|1@1+ (1,0) [0|1] ""  BDC
+  SG_ Reverse : 2|1@1+ (1,0) [0|1] ""  BDC
+  SG_ LightOff : 3|1@1+ (1,0) [0|1] ""  BDC
+  SG_ Brake : 4|1@1+ (1,0) [0|1] ""  BDC
+  SG_ RightBlinker : 5|1@1+ (1,0) [0|1] ""  BDC
+  SG_ LeftBlinker : 6|1@1+ (1,0) [0|1] ""  BDC
+  SG_ Fog : 7|1@1+ (1,0) [0|1] ""  BDC
+  SG_ Interior : 8|1@1+ (1,0) [0|1] ""  BDC
+  SG_ Special1 : 9|1@1+ (1,0) [0|1] ""  BDC
+  SG_ Special2 : 10|1@1+ (1,0) [0|1] ""  BDC
+
+BO_ 206 WheelSpeeds: 8 BDC
+  SG_ Wheel_FL : 0|16@1- (0.0625,0) [0|255] "kph" XXX
+  SG_ Wheel_FR : 16|16@1- (0.0625,0) [0|255] "kph" XXX
+  SG_ Wheel_RL : 32|16@1- (0.0625,0) [0|255] "kph" XXX
+  SG_ Wheel_RR : 48|16@1- (0.0625,0) [0|255] "kph" XXX
+
+BO_ 416 EngineData: 8 EDME
+  SG_ VehicleSpeed : 0|12@1+ (1,0) [0|255] "kph" XXX
+  SG_ MovingForward : 12|1@1+ (1,0) [0|1] "" XXX
+  SG_ MovingReverse : 13|1@1+ (1,0) [0|1] "" XXX
+  SG_ BrakePressed : 16|8@1+ (0.01,0) [0|100] "" XXX
+  SG_ Brake_active : 24|1@1+ (1,0) [0|1] "" XXX
+  SG_ Damping_rate_full_throttle : 28|8@1+ (0.01,0) [0|100] "" XXX
+  SG_ Damping_rate_zero_throttle_clutch_engaged : 36|8@1+ (1,0) [0|100] "" XXX
+  SG_ Damping_rate_zero_throttle_clutch_disengaged : 44|8@1+ (0.01,0) [0|1] "" XXX
+  SG_ Checksum_416 : 56|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 436 InstrumentHandBrake: 8 EDME
+  SG_ VehicleSpeed : 0|12@1+ (1,0) [0|255] "kph" XXX
+  SG_ HandbrakeActive : 32|1@1+ (1,0) [0|1] "" XXX
+  SG_ Checksum : 48|16@1+ (1,0) [0|15] "" XXX
+  
+BO_ 196 SteeringWheelAngle: 8 SWA
+  SG_ SteeringPosition : 0|8@1- (0.01,0) [-1.28|1.27] "" XXX
+  SG_ FrontWheel : 8|8@1- (0.01,0) [-1.28|1.27] "degree" XXX
+  SG_ BackWheel : 16|8@1- (1.0,0) [-128|127] "degree" XXX
+  SG_ SteeringWheelFL : 24|8@1- (1.0,0) [-128|127] "degree" XXX
+  SG_ SteeringWheelFR : 32|8@1- (1.0,0) [-128|127] "degree" XXX
+  SG_ SteeringWheelBL : 40|8@1- (1.0,0) [-128|127] "degree" XXX
+  SG_ SteeringWheelBR : 48|8@1- (1.0,0) [-128|127] "degree" XXX
+  SG_ Checksum_416 : 56|8@1+ (1.0,0) [0|255] "" XXX
+
+BO_ 186 GearSelectorSwitch: 8 GWS
+  SG_ ManualGear : 0|1@1+ (1,0) [0|1] "" XXX
+  SG_ AutoGear : 1|1@1+ (1,0) [0|1] "" XXX
+  SG_ GearSwitchTime : 8|8@1+ (0.01,0) [0|100] "" XXX
+  SG_ Ratio : 16|8@1+ (0.01,0) [0|100] "" XXX
+  SG_ DownRatio : 24|8@1+ (0.01,0) [0|100] "" XXX
+  SG_ UpRatio : 32|8@1+ (0.01,0) [0|100] "" XXX
+  SG_ GearState : 40|8@1- (1,0) [-1|127] "" XXX
+  SG_ Checksum : 48|8@1+ (1,0) [0|255] "" XXX
+
+BO_ 187 TransmissionData: 8 GWS
+  SG_ GearTar : 0|16@1- (1,0) [-1|127] "" XXX

