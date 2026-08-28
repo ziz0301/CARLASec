@@ -93,6 +93,7 @@ The attack payloads and attack configuration used by the automated attacker are 
 ```text
 ids_attacker2.sh
 ```
+You can also modify the individual CAN/UDS attack payloads directly in `ids_attacker2.sh` to create or evaluate different attack scenarios.
 The attack type can be selected by modifying the `ATTACK_TYPE` variable.
 For example:
 ```bash
@@ -104,7 +105,7 @@ To randomly select an attack type, use:
 ```bash
 ATTACK_TYPE=$(rand_between 1 8)
 ```
-You can also modify the individual CAN/UDS attack payloads directly in `ids_attacker2.sh` to create or evaluate different attack scenarios.
+
 ---
 
 ## 6. Run a Vehicle with Manual Attacks
@@ -198,7 +199,9 @@ and inject attack messages manually as described in **Section 6**.
 ## 8. Run a Vehicle with IDS and Attack Response
 CARLASec also supports a state-based safety-response framework in which IDS alerts trigger appropriate vehicle safety actions.
 This experiment uses the same three-component setup described in **Section 7**. The CAN server/sniffer continues to provide the labelled ground-truth traffic, while the runtime IDS monitors `vcan0` and generates IDS alerts. The main difference is that `client_run_response.py` replaces `client_run.py`.
+
 Unlike the standard client, **`client_run_response.py` integrates the `RSSStateResponse` mechanism**, which receives IDS alerts and uses the current response state and RSS-based safety information to modify the vehicle control when necessary. It also records response states and related information for later evaluation.
+
 The complete experiment follows:
 Vehicle and attack → labelled CAN traffic → IDS detection → vehicle safety response
 
