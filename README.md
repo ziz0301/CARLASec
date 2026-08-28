@@ -1,6 +1,6 @@
-# CARLASec
+# CARLASec+
 
-**CARLASec** is an extension of the **CARLA autonomous driving simulator** designed to support cybersecurity research on autonomous and connected vehicles.
+**CARLASec+** is an extension of the **CARLA autonomous driving simulator** designed to support cybersecurity research on autonomous and connected vehicles.
 The framework enables the simulation of automotive cyberattacks via an emulated in-vehicle network that uses **Controller Area Network (CAN)** and **Unified Diagnostic Services (UDS)** messages.
 
 CARLASec extends the original CARLA simulator by incorporating:
