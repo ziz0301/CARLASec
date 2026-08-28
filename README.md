@@ -263,7 +263,8 @@ This configuration prioritises camera-based perception while retaining limited g
 python cameradegration.py
 ```
 `cameradegration.py` provides an alternative adaptive version of the hybrid controller. Instead of maintaining a fixed 80/20 ratio, the contribution of the CARLA planner increases when stronger planner steering is required, such as on curved or complex road sections.
-The vision contribution varies from approximately **85% on relatively straight sections to 30% during strong turns**, allowing the planner to provide greater route guidance when necessary.
+
+The vision contribution varies from approximately 85% on relatively straight sections to 30% during strong turns, allowing the planner to provide greater route guidance when necessary.
 
 
 ---
@@ -281,7 +282,7 @@ candump kcan4
 ---
 ## Citation
 
-If you use CARLASec in academic research, please acknowledge the CARLA simulator and cite our CARLASec research publications:
+If you use CARLASec in academic research, please cite our CARLASec research publications:
 
 ```bibtex
 @inproceedings{nguyen2024ausse,
@@ -291,6 +292,20 @@ If you use CARLASec in academic research, please acknowledge the CARLA simulator
   pages     = {1--5},
   year      = {2024},
   doi       = {10.1109/DSN-S60304.2024.00012}
+}
+```
+CARLASec is developed based on the CARLA autonomous driving simulator.
+If you use CARLASec in your research, please also cite the original CARLA paper:
+CARLA: An Open Urban Driving Simulator
+
+Alexey Dosovitskiy, German Ros, Felipe Codevilla, Antonio Lopez, Vladlen Koltun; PMLR 78:1-16
+```
+@inproceedings{Dosovitskiy17,
+  title = {{CARLA}: {An} Open Urban Driving Simulator},
+  author = {Alexey Dosovitskiy and German Ros and Felipe Codevilla and Antonio Lopez and Vladlen Koltun},
+  booktitle = {Proceedings of the 1st Annual Conference on Robot Learning},
+  pages = {1--16},
+  year = {2017}
 }
 ```
 
