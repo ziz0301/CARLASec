@@ -313,5 +313,3 @@ Alexey Dosovitskiy, German Ros, Felipe Codevilla, Antonio Lopez, Vladlen Koltun;
 # Research Use 
 CARLASec is a **research and simulation framework** intended for cybersecurity research, autonomous vehicle security evaluation, safety analysis, and education in controlled environments.
 The CAN and UDS attack examples provided in this repository are only designed for the CARLASec/CARLA simulation environment.
-
-Users should verify the configuration of their CARLA version, SocketCAN interfaces, Python environment, and CARLASec dependencies before running experiments.
